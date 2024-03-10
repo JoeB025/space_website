@@ -13,6 +13,8 @@ const seed = ({
   commentData,
   planetNameData,
   astronomyData,
+  blackHoleData,
+  galaxyData
 }) => {
   return db
     .query(`DROP TABLE IF EXISTS comments;`)
@@ -30,6 +32,12 @@ const seed = ({
     })
     .then(() => {
       return db.query("DROP TABLE IF EXISTS astronomy_info;");
+    })
+    .then(() => {
+      return db.query("DROP TABLE IF EXISTS black_holes;");
+    })
+    .then(() => {
+      return db.query("DROP TABLE IF EXISTS galaxies;");
     })
     .then(() => {
       const topicsTablePromise = db.query(`
@@ -88,6 +96,34 @@ CREATE TABLE planet_names (
         astronomy_info_id SERIAL PRIMARY KEY,
         topic VARCHAR,
         description VARCHAR NOT NULL
+      );`);
+    })
+
+    .then(() => {
+      return db.query(`
+      CREATE TABLE black_holes (
+        black_hole_id SERIAL PRIMARY KEY,
+        name VARCHAR,
+        type VARCHAR NOT NULL,
+        mass VARCHAR NOT NULL,
+        distance VARCHAR NOT NULL,
+        description VARCHAR NOT NULL
+      );`);
+    })
+    .then(()=> {
+      return db.query(`
+      CREATE TABLE galaxies (
+        galaxy_id SERIAL PRIMARY KEY,
+        galaxy_name VARCHAR NOT NULL,
+        type VARCHAR NOT NULL,
+        size VARCHAR NOT NULL,
+        distance_from_earth VARCHAR NOT NULL,
+        number_of_stars VARCHAR NOT NULL,
+        visible_galactic_center BOOLEAN NOT NULL,
+        constellation VARCHAR NOT NULL,
+        general_info VARCHAR NOT NULL,
+        observation_history VARCHAR,
+        timeline VARCHAR
       );`);
     })
 
@@ -189,6 +225,36 @@ CREATE TABLE planet_names (
         astronomyData.map(({ topic, description }) => [topic, description])
       )
       return db.query(insertAstronomyQueryStr) 
+    })
+    .then(() => {
+      const insertBlackHoleQueryStr = format(
+        `
+        INSERT INTO black_holes
+        (name, type, mass, distance, description)
+        VALUES
+        %L
+        RETURNING *;
+        `,
+        blackHoleData.map(({ name, type, mass, distance, description }) => [name, type, mass, distance, description])
+      )
+      return db.query(insertBlackHoleQueryStr)
+    })
+
+
+
+    .then(() => {
+      const insertGalaxyQueryStr = format(
+        `
+        INSERT INTO galaxies
+        (galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline)
+        VALUES
+        %L
+        RETURNING *;
+        `,
+        galaxyData.map(({ galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline }) => [galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline])
+      )
+      console.log(insertGalaxyQueryStr)
+      return db.query(insertGalaxyQueryStr)
     })
 
 };
