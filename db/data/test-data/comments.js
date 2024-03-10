@@ -1,128 +1,81 @@
 module.exports = [
   {
-    body: "Oh, I've got compassion running out of my nose, pal! I'm the Sultan of Sentiment!",
-    votes: 16,
-    author: "butter_bridge",
-    article_id: 9,
-    created_at: 1586179020000,
-  },
-  {
-    body: "The beautiful thing about treasure is that it exists. Got to find out what kind of sheets these are; not cotton, not rayon, silky.",
-    votes: 14,
-    author: "butter_bridge",
-    article_id: 1,
-    created_at: 1604113380000,
-  },
-  {
-    body: "Replacing the quiet elegance of the dark suit and tie with the casual indifference of these muted earth tones is a form of fashion suicide, but, uh, call me crazy — onyou it works.",
-    votes: 100,
-    author: "icellusedkars",
-    article_id: 1,
-    created_at: 1583025180000,
-  },
-  {
-    body: " I carry a log — yes. Is it funny to you? It is not to me.",
-    votes: -100,
-    author: "icellusedkars",
-    article_id: 1,
-    created_at: 1582459260000,
-  },
-  {
-    body: "I hate streaming noses",
+    body: "Is Pluto a dwarf planet?",
     votes: 0,
-    author: "icellusedkars",
+    author: "tickle122",
     article_id: 1,
-    created_at: 1604437200000,
+    created_at: 1590103140000
   },
   {
-    body: "I hate streaming eyes even more",
-    votes: 0,
-    author: "icellusedkars",
+    body: "Pluto is now classified as a dwarf planet because, while it is large enough to have become spherical, it is not big enough to exert its orbital dominance and clear the neighborhood surrounding its orbit.",
+    votes: 9,
+    author: "grumpy19",
     article_id: 1,
-    created_at: 1586642520000,
+    created_at: 1577890920000
   },
   {
-    body: "Lobster pot",
-    votes: 0,
-    author: "icellusedkars",
-    article_id: 1,
-    created_at: 1589577540000,
-  },
-  {
-    body: "Delicious crackerbreads",
-    votes: 0,
-    author: "icellusedkars",
-    article_id: 1,
-    created_at: 1586899140000,
-  },
-  {
-    body: "Superficially charming",
-    votes: 0,
-    author: "icellusedkars",
-    article_id: 1,
-    created_at: 1577848080000,
-  },
-  {
-    body: "git push origin master",
-    votes: 0,
-    author: "icellusedkars",
-    article_id: 3,
-    created_at: 1592641440000,
-  },
-  {
-    body: "Ambidextrous marsupial",
-    votes: 0,
-    author: "icellusedkars",
-    article_id: 3,
-    created_at: 1600560600000,
-  },
-  {
-    body: "Massive intercranial brain haemorrhage",
-    votes: 0,
-    author: "icellusedkars",
-    article_id: 1,
-    created_at: 1583133000000,
-  },
-  {
-    body: "Fruit pastilles",
-    votes: 0,
-    author: "icellusedkars",
-    article_id: 1,
-    created_at: 1592220300000,
-  },
-  {
-    body: "What do you see? I have no idea where this will lead us. This place I speak of, is known as the Black Lodge.",
-    votes: 16,
-    author: "icellusedkars",
-    article_id: 5,
-    created_at: 1591682400000,
-  },
-  {
-    body: "I am 100% sure that we're not completely sure.",
-    votes: 1,
-    author: "butter_bridge",
-    article_id: 5,
-    created_at: 1606176480000,
-  },
-  {
-    body: "This is a bad article name",
-    votes: 1,
-    author: "butter_bridge",
-    article_id: 6,
-    created_at: 1602433380000,
-  },
-  {
-    body: "The owls are not what they seem.",
+    body: "I thought Pluto was a dog?",
     votes: 20,
-    author: "icellusedkars",
-    article_id: 9,
-    created_at: 1584205320000,
+    author: "happyamy2016",
+    article_id: 1,
+    created_at: 1600820280000
   },
   {
-    body: "This morning, I showered for nine minutes.",
-    votes: 16,
-    author: "butter_bridge",
-    article_id: 1,
-    created_at: 1595294400000,
+    body: "Venus is my fav planet!",
+    votes: 14,
+    author: "happyamy2016",
+    article_id: 2,
+    created_at: 1600820280000
   },
-];
+  {
+    body: "The thought of a black hole terrifies me, but it's so interesting to learn about!",
+    votes: 14,
+    author: "happyamy2016",
+    article_id: 3,
+    created_at: 1602370980000
+  },
+  {
+    body: "Couldn't agree more happyamy2016!",
+    votes: 2,
+    author: "grumpy19",
+    article_id: 3,
+    created_at: 1602370980000
+  },
+  {
+    body: "Completely agree with you both!",
+    votes: 2,
+    author: "tickle122",
+    article_id: 3,
+    created_at: 1585948620000,
+  },
+  {
+    body: "There must be at least one habitable planet out there besides our own",
+    votes: 5,
+    author: "tickle122",
+    article_id: 2,
+    created_at: 1585948620000,
+  },
+  {
+    body: "I agree, the amount of planets and stars in the universe, surely some planets are similar to Earth.",
+    votes: 9,
+    author: "happyamy2016",
+    article_id: 3,
+    created_at: 1594890960000
+  },
+  {
+    body: "This is astronomically entertaining!",
+    votes: 2,
+    author: "tickle122",
+    article_id: 4,
+    created_at: 1594890960000
+  },
+  {
+    body: "How does the moon control the tide?",
+    votes: 2,
+    author: "tickle122",
+    article_id: 4,
+    created_at: 1594890960000
+  },
+
+
+]

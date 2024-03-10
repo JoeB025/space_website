@@ -1,0 +1,22 @@
+  planets_id SERIAL PRIMARY Key,
+  name VARCHAR NOT NULL,
+  id VARCHAR NOT NULL,
+  topic VARCHAR NOT NULL,
+
+
+  
+  average_temperature INTEGER NOT NULL,
+  hottest_recorded_temperature INTEGER,
+  lowest_recorded_temperature INTEGER,
+  body_type VARCHAR NOT NULL,
+  density FLOAT NOT NULL,
+  dimension VARCHAR NOT NULL,
+  distance_from_sun FLOAT NOT NULL,
+  gravity FLOAT NOT NULL,
+  mass_value FLOAT NOT NULL,
+  mass_exponent INTEGER NOT NULL,
+  mean_radius FLOAT NOT NULL,
+  number_of_moons INTEGER NOT NULL,
+  img_of_planet VARCHAR DEFAULT,
+  time_to_orbit_sun FLOAT NOT NULL,
+  planet_description TEXT NOT NULL, 

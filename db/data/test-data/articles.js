@@ -1,120 +1,163 @@
 module.exports = [
   {
-    title: "Living in the shadow of a great man",
-    topic: "mitch",
-    author: "butter_bridge",
-    body: "I find this existence challenging",
-    created_at: 1594329060000,
-    votes: 100,
+    title: "The Rise Of Thinking Machines: How IBM's Watson Takes On The World",
+    topic: "coding",
+    author: "jessjelly",
+    body: "Many people know Watson as the IBM-developed cognitive super computer that won the Jeopardy! gameshow in 2011. In truth, Watson is not actually a computer but a set of algorithms and APIs, and since winning TV fame (and a $1 million prize) IBM has put it to use tackling tough problems in every industry from healthcare to finance. Most recently, IBM has announced several new partnerships which aim to take things even further, and put its cognitive capabilities to use solving a whole new range of problems around the world.",
+    created_at: 1589418120000,
+    votes: 0,
     article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
+      "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?w=700&h=700",
   },
   {
-    title: "Sony Vaio; or, The Laptop",
-    topic: "mitch",
-    author: "icellusedkars",
-    body: "Call me Mitchell. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would buy a laptop about a little and see the codey part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people’s hats off—then, I account it high time to get to coding as soon as I can. This is my substitute for pistol and ball. With a philosophical flourish Cato throws himself upon his sword; I quietly take to the laptop. There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the the Vaio with me.",
-    created_at: 1602828180000,
+    title: "The vegan carnivore?",
+    topic: "cooking",
+    author: "tickle122",
+    body: "The chef Richard McGeown has faced bigger culinary challenges in his distinguished career than frying a meat patty in a little sunflower oil and butter. But this time the eyes and cameras of hundreds of journalists in the room were fixed on the 5oz (140g) pink disc sizzling in his pan, one that had been five years and €250,000 in the making. This was the world’s first proper portion of cultured meat, a beef burger created by Mark Post, professor of physiology, and his team at Maastricht University in the Netherlands. Post (which rhymes with ‘lost’, not ‘ghost’) has been working on in vitro meat (IVM) since 2009. On 5 August this year he presented his cultured beef burger to the world as a ‘proof of concept’. Having shown that the technology works, Post believes that in a decade or so we could see commercial production of meat that has been grown in a lab rather than reared and slaughtered. The comforting illusion that supermarket trays of plastic-wrapped steaks are not pieces of dead animal might become a discomforting reality.",
+    created_at: 1583788860000,
+    votes: 0,
     article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
+      "https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?w=700&h=700",
   },
   {
-    title: "Eight pug gifs that remind me of mitch",
-    topic: "mitch",
-    author: "icellusedkars",
-    body: "some gifs",
-    created_at: 1604394720000,
+    title: "TenHag the man!",
+    topic: "football",
+    author: "weegembump",
+    body: `In the realm of football's grand design,
+    There stands a man both wise and kind,
+    With vision bold and strategies bright,
+    Eric ten Hag, a beacon of light.
+    
+    From Haaksbergen he did arise,
+    A coach with fire in his eyes,
+    His playing days were but a prelude,
+    To a managerial path pursued.
+    
+    With Twente's youth, he honed his craft,
+    Unveiling talents, making them laugh,
+    He saw the spark in every soul,
+    And nurtured them to reach their goal.
+    
+    Then came the call from Ajax's door,
+    A chance to reshape and to restore,
+    A sleeping giant poised to rise,
+    Under ten Hag's enlightened guise.
+    
+    His philosophy, a work of art,
+    Possession, movement, playing smart,
+    A symphony of passes danced,
+    As Ajax's prowess was enhanced.
+    
+    The pitch became his chessboard vast,
+    Each player moving, shadows cast,
+    With precision and calculated might,
+    Ten Hag orchestrated their footballing flight.
+    
+    From the back they built their dream,
+    With pressing high, they'd make teams scream,
+    Fluid movement, a joyful ballet,
+    As Ajax's brilliance came to play.
+    
+    Champions they rose in Dutch terrain,
+    Their dominance, a joyous reign,
+    The Eredivisie their rightful throne,
+    Eric ten Hag, a leader known.
+    
+    But it was Europe where he'd truly shine,
+    Challenging giants, weaving a line,
+    With courage and belief, they'd soar,
+    In the Champions League, they'd explore.
+    
+    A fearless march against the odds,
+    The footballing world in awe applauds,
+    With ten Hag's guidance, they'd dare to roam,
+    The young and talented, finding home.
+    
+    In battles fierce, they etched their name,
+    Defying history, fortune's game,
+    A testament to ten Hag's command,
+    That Ajax's spirit forever will stand.
+    
+    So let us sing a song of praise,
+    For Eric ten Hag's guiding ways,
+    A mastermind, a football sage,
+    Whose brilliance sets the pitch ablaze.`,
+    created_at: 1584887100000,
+    votes: 0,
     article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
+      "https://images.pexels.com/photos/774321/pexels-photo-774321.jpeg?w=700&h=700",
+  },
+  { 
+    topic: 'Dwarf Planet',
+    title: 'Weird white dwarf star has a metal scar after eating a planet',
+    author: 'SuperLeahCrane',
+    body: `Astronomers have spotted a white dwarf star with a patch of metal near one of its magnetic poles, 
+    which probably formed when the star devoured a small planet. \n Astronomers have found a white dwarf 
+    star with a strange metallic scar on its surface. This blemish probably formed when the star ripped up 
+    and ate a small planet in its orbit. \n Researchers often spot white dwarfs with traces of metal in 
+    their atmospheres from planets that have fallen into the star. Astronomers have long thought the 
+    metals should be distributed evenly across the surfaces of these so-called polluted white dwarfs. 
+    But Jay Farihi at University College London and his colleagues have found one with an odd, concentrated 
+    patch of metal. \n The researchers monitored the star, called WD 0816-310, over a period of two months using 
+    the Very Large Telescope in Chile. They found an opaque patch of metal over one of the white dwarf's magnetic poles, 
+    blocking some of the star's light as it rotated. This position indicates the material was probably funnelled into the 
+    star by its magnetic field. “This is an identical process to the one that causes the aurora on Earth: charged 
+    particles following the magnetic field to the surface,” says Farihi. \n The planet that WD 0816-310 destroyed was 
+    small - probably around the same size as the asteroid Vesta in our solar system, about 525 kilometres across. 
+    Its innards are now displayed prominently on its host star’s surface, which could make it relatively easy to 
+    study what its geochemistry was like before it was devoured. Such studies may even be among the best ways to 
+    observe small worlds beyond our solar system, albeit after their demise. \n And there may be many more scarred 
+    stars just like this one. “When we find one that looks like an oddball, it oftentimes means that all of them look 
+    like that and we just weren’t asking the right questions,” says Farihi. “This is the first one, but it's probably 
+    not the last.” In fact, the researchers have already found two white dwarfs that appear to have similar scars. 
+    Going back to make repeat observations of similar stars could unearth even more.`,
+    votes: 0,
+    article_img_url: 'http://',
+    created_at: 1602370980000
+  },
+  { 
+    topic: 'Planet',
+    title: 'Habitable ocean world K2-18b may actually be inhospitable gas planet',
+    author: "tickle122",
+    body: "An exoplanet called K2-18b has been suggested as a good place to look for alien life, but a new analysis shows it is probably made from gas. \n A distant planet once touted as a potential location to look for alien life is actually most likely to be inhospitable, according to astronomers who have found it probably lacks a solid surface. \n In 2015, astronomers discovered a planet 110 light years away called K2-18b, which later analysis estimated to be a super-Earth or mini-Neptune about eight times the mass of our world.",
+    votes: 0, 
+    article_img_url: 'http://',
+    created_at: 1602370980000
+  },
+  { 
+    topic: 'Black holes',
+    title: 'Mysterious Cosmic Phenomena',
+    author: "happyamy2016",
+    body: "Black holes are one of the most intriguing and mysterious phenomena in the universe. These cosmic entities possess such immense gravitational pull that nothing, not even light, can escape from them once it crosses the event horizon. Formed from the remnants of massive stars that have undergone gravitational collapse, black holes come in various sizes, ranging from stellar-mass black holes, which are several times the mass of our Sun, to supermassive black holes, found at the centers of galaxies and weighing millions to billions of times the mass of the Sun. The concept of a black hole was first proposed by Albert Einstein's theory of general relativity, but it wasn't until the mid-20th century that scientists began to seriously consider their existence. Since then, numerous observations, both through telescopes and advanced instruments, have provided compelling evidence for the presence of black holes in the universe. One of the most fascinating aspects of black holes is their effect on spacetime. According to general relativity, black holes warp the fabric of spacetime to such an extent that time itself slows down near the event horizon. This phenomenon, known as gravitational time dilation, has profound implications for our understanding of the nature of space and time. Despite their mysterious nature, black holes play a crucial role in shaping the cosmos. They are thought to be responsible for the formation of galaxies and the regulation of their growth through processes such as accretion and the ejection of powerful jets of energetic particles. Furthermore, black holes serve as natural laboratories for testing the fundamental laws of physics under extreme conditions. Scientists hope that studying black holes will provide insights into some of the most pressing questions in physics, such as the unification of quantum mechanics and general relativity.",
+    votes: 0, 
+    article_img_url: 'http://',
+    created_at: 1602370980000
   },
   {
-    title: "Student SUES Mitch!",
-    topic: "mitch",
-    author: "rogersop",
-    body: "We all love Mitch and his wonderful, unique typing style. However, the volume of his typing has ALLEGEDLY burst another students eardrums, and they are now suing for damages",
-    created_at: 1588731240000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
+    topic: 'Astronomy',
+    title: 'Exploring the Vast Cosmos',
+    author: "happyamy2016",
+    body: "Astronomy, the study of celestial objects and phenomena beyond Earth's atmosphere, has captivated humanity for centuries. From ancient civilizations gazing at the stars to modern astronomers peering into the depths of space with powerful telescopes, the quest to understand the cosmos has been a driving force in scientific exploration. Astronomy encompasses a wide range of topics, from the study of planets, stars, and galaxies to the exploration of cosmic phenomena such as supernovae, black holes, and the Big Bang. Through careful observation, analysis, and theoretical modeling, astronomers have unraveled many mysteries of the universe. They have mapped distant galaxies, discovered exoplanets orbiting other stars, and probed the nature of dark matter and dark energy, which together make up the majority of the universe's mass and energy content. The field of astronomy is also closely linked to other branches of science, such as physics, chemistry, and biology, as astronomers seek to understand the fundamental laws that govern the cosmos and its evolution over time. From the origins of the universe to the possibility of extraterrestrial life, astronomy continues to inspire wonder and curiosity, inviting us to explore the wonders of the cosmos and our place within it.",
+    votes: 0,
+    article_img_url: 'http://',
+    created_at: 1602370980000
   },
   {
-    title: "UNCOVERED: catspiracy to bring down democracy",
-    topic: "cats",
-    author: "rogersop",
-    body: "Bastet walks amongst us, and the cats are taking arms!",
-    created_at: 1596464040000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
+    topic: 'Moons',
+    title: 'Exploring the Natural Satellites of the Solar System',
+    author: "KingKakarot",
+    body: "Moons, natural satellites that orbit planets, have long fascinated astronomers and captured the imagination of humanity. These celestial bodies come in various sizes and shapes, ranging from small irregular rocks to large worlds with complex geology and atmospheres. Moons play a crucial role in shaping the dynamics of planetary systems, influencing tides, stabilizing orbits, and even potentially harboring life. The Earth's Moon, our closest celestial neighbor, has been the subject of scientific study and exploration for centuries. It has provided valuable insights into the history of our solar system and the processes that shaped our planet. Other moons in the solar system exhibit a wide range of characteristics and features. For example, Jupiter's moon Io is known for its intense volcanic activity, while Saturn's moon Titan boasts a thick atmosphere and hydrocarbon lakes. Moons like Europa and Enceladus have subsurface oceans that may harbor conditions suitable for life. The study of moons extends beyond our own solar system, with astronomers discovering exomoons orbiting planets in distant star systems. These discoveries open new avenues for understanding planetary formation and the potential for habitability beyond our cosmic neighborhood. As technology advances and space exploration continues, the study of moons promises to reveal more about the diversity and complexity of planetary systems throughout the universe.",
+    votes: 0,
+    article_img_url: 'http://',
+    created_at: 1602370980000
+  }, 
   {
-    title: "A",
-    topic: "mitch",
-    author: "icellusedkars",
-    body: "Delicious tin of cat food",
-    created_at: 1602986400000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
-  {
-    title: "Z",
-    topic: "mitch",
-    author: "icellusedkars",
-    body: "I was hungry.",
-    created_at: 1578406080000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
-  {
-    title: "Does Mitch predate civilisation?",
-    topic: "mitch",
-    author: "icellusedkars",
-    body: "Archaeologists have uncovered a gigantic statue from the dawn of humanity, and it has an uncanny resemblance to Mitch. Surely I am not the only person who can see this?!",
-    created_at: 1587089280000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
-  {
-    title: "They're not exactly dogs, are they?",
-    topic: "mitch",
-    author: "butter_bridge",
-    body: "Well? Think about it.",
-    created_at: 1591438200000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
-  {
-    title: "Seven inspirational thought leaders from Manchester UK",
-    topic: "mitch",
-    author: "rogersop",
-    body: "Who are we kidding, there is only one, and it's Mitch!",
-    created_at: 1589433300000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
-  {
-    title: "Am I a cat?",
-    topic: "mitch",
-    author: "icellusedkars",
-    body: "Having run out of ideas for articles, I am staring at the wall blankly, like a cat. Does this make me a cat?",
-    created_at: 1579126860000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
-  {
-    title: "Moustache",
-    topic: "mitch",
-    author: "butter_bridge",
-    body: "Have you seen the size of that thing?",
-    created_at: 1602419040000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
-  {
-    title: "Another article about Mitch",
-    topic: "mitch",
-    author: "butter_bridge",
-    body: "There will never be enough articles about Mitch!",
-    created_at: 1602419040000,
-    article_img_url:
-      "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg?w=700&h=700",
-  },
+    topic: 'Supernova',
+    title: 'Exploring the Explosive Deaths of Stars',
+    author: "PokemonMasterOne",
+    body: "Supernova, the explosive deaths of stars, are among the most energetic events in the universe. These cataclysmic explosions occur when massive stars reach the end of their lives and undergo gravitational collapse, leading to a sudden release of energy that outshines entire galaxies. Supernovas play a crucial role in the evolution of galaxies, enriching the interstellar medium with heavy elements forged in their fiery cores. They also serve as cosmic laboratories for studying extreme physics and the production of elements beyond iron. There are two main types of supernovae: Type Ia and Type II. Type Ia supernovas occur in binary star systems, where a white dwarf star accretes matter from a companion until it reaches a critical mass, triggering a thermonuclear explosion. These explosions are used as standard candles to measure cosmic distances and have played a key role in the discovery of the accelerated expansion of the universe. Type II supernovas, on the other hand, result from the core collapse of massive stars at least eight times the mass of the Sun. As the star's core runs out of nuclear fuel, it collapses under its own gravity, leading to a shockwave that tears the star apart in a spectacular explosion. The remnants of supernovas, such as neutron stars and black holes, continue to influence their surroundings long after the initial explosion, shaping the evolution of galaxies and the formation of new stars and planetary systems. Through observations with telescopes and advanced instruments, astronomers continue to unravel the mysteries of supernovas, shedding light on the processes that govern the life and death of stars and the dynamics of the cosmos.",
+    votes: 0,
+    article_img_url: 'http://',
+    created_at: 1602370980000
+  }
 ];

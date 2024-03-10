@@ -1,7 +1,7 @@
 {
-  "name": "be-nc-news",
+  "name": "space_website",
   "version": "1.0.0",
-  "description": "bc-nc-news",
+  "description": "space_website",
   "main": "index.js",
   "scripts": {
     "setup-dbs": "psql -f ./db/setup.sql",
@@ -36,3 +36,12 @@
     ]
   }
 }
+
+
+
+
+
+
+
+
+

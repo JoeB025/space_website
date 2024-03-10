@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS nc_news_test;
-DROP DATABASE IF EXISTS nc_news;
+DROP DATABASE IF EXISTS space_website_test;
+DROP DATABASE IF EXISTS space_website;
 
-CREATE DATABASE nc_news_test;
-CREATE DATABASE nc_news;
+CREATE DATABASE space_website_test;
+CREATE DATABASE space_website;
