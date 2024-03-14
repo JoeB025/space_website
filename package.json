@@ -6,7 +6,7 @@
   "scripts": {
     "setup-dbs": "psql -f ./db/setup.sql",
     "seed": "node ./db/seeds/run-seed.js",
-    "test": "jest",
+    "test": "PGDATABASE=space_website_test jest",
     "prepare": "husky install"
   },
   "repository": {
@@ -27,21 +27,19 @@
     "pg-format": "^1.0.4"
   },
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "pg": "^8.7.3"
+    "cors": "^2.8.5",
+    "db": "^6.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jest-sorted": "^1.0.15",
+    "pg": "^8.7.3",
+    "seed": "^0.4.4",
+    "supertest": "^6.3.4"
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "jest-extended/all"
+      "jest-extended/all",
+      "jest-sorted"
     ]
   }
 }
-
-
-
-
-
-
-
-
-

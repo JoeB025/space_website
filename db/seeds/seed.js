@@ -253,7 +253,6 @@ CREATE TABLE planet_names (
         `,
         galaxyData.map(({ galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline }) => [galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline])
       )
-      console.log(insertGalaxyQueryStr)
       return db.query(insertGalaxyQueryStr)
     })
 
