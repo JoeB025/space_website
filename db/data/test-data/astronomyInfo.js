@@ -32,7 +32,7 @@ module.exports = [
       description: 'A celestial body that orbits the Sun, has sufficient mass for its self-gravity to overcome rigid body forces so that it assumes a nearly round shape, but has not cleared its orbit of other debris.'
   },
   {
-      name: 'Neutron Star',
+      topic: 'Neutron Star',
       description: 'A dense, compact stellar remnant composed almost entirely of neutrons. Neutron stars are formed from the remnants of supernova explosions.'
   },
   {
@@ -48,7 +48,7 @@ module.exports = [
       description: 'A cloud of gas and dust in space, either newly formed or the remnants of a supernova explosion. Nebulae serve as the birthplace for stars and planetary systems.'
   },
   {
-      name: 'Quasar',
+      topic: 'Quasar',
       description: 'An extremely luminous and active galactic nucleus powered by a supermassive black hole at the center of a galaxy. Quasars emit massive amounts of energy across the electromagnetic spectrum.'
   },
   {
@@ -60,7 +60,7 @@ module.exports = [
       description: 'The matter and radiation that exist in the space between the star systems in a galaxy. It consists mostly of hydrogen and helium gas, along with traces of other elements and cosmic dust.'
   },
   {
-      topic: 'Cosmic Microwave Background (CMB)',
+      topic: 'Cosmic Microwave Background',
       description: 'The electromagnetic radiation left over from the Big Bang. It fills the universe and provides crucial evidence supporting the Big Bang theory of cosmology.'
   }
 ];

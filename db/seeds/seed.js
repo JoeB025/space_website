@@ -14,7 +14,9 @@ const seed = ({
   planetNameData,
   astronomyData,
   blackHoleData,
-  galaxyData
+  galaxyData,
+  planetsData,
+  moonData
 }) => {
   return db
     .query(`DROP TABLE IF EXISTS comments;`)
@@ -38,6 +40,12 @@ const seed = ({
     })
     .then(() => {
       return db.query("DROP TABLE IF EXISTS galaxies;");
+    })
+    .then(() => {
+      return db.query("DROP TABLE IF EXISTS planets;");
+    })
+    .then(() => {
+      return db.query("DROP TABLE IF EXISTS moons;");
     })
     .then(() => {
       const topicsTablePromise = db.query(`
@@ -94,7 +102,7 @@ CREATE TABLE planet_names (
       return db.query(`
       CREATE TABLE astronomy_info (
         astronomy_info_id SERIAL PRIMARY KEY,
-        topic VARCHAR,
+        topic VARCHAR NOT NULL,
         description VARCHAR NOT NULL
       );`);
     })
@@ -122,11 +130,45 @@ CREATE TABLE planet_names (
         visible_galactic_center BOOLEAN NOT NULL,
         constellation VARCHAR NOT NULL,
         general_info VARCHAR NOT NULL,
-        observation_history VARCHAR,
-        timeline VARCHAR
+        observation_history VARCHAR NOT NULL,
+        timeline VARCHAR NOT NULL
       );`);
     })
-
+    .then(() => {
+      return db.query(`
+      CREATE TABLE planets (
+        planets_id SERIAL PRIMARY KEY,
+        name VARCHAR NOT NULL,
+        average_temp INTEGER NOT NULL,
+        highest_recorded_temp VARCHAR NOT NULL,
+        lowest_recorded_temp VARCHAR NOT NULL,
+        planet_type VARCHAR NOT NULL,
+        density FLOAT NOT NULL,
+        dimension VARCHAR NOT NULL,
+        distance_from_sun FLOAT NOT NULL,
+        gravity FLOAT NOT NULL,
+        mass_value FLOAT NOT NULL,
+        number_of_moons INTEGER NOT NULL,
+        orbital_period_years FLOAT NOT NULL,
+        mass_exponent INTEGER NOT NULL,
+        mean_radius FLOAT NOT NULL,
+        planet_description TEXT NOT NULL
+ 
+      );`);
+    })
+    .then(() => {
+      return db.query(`
+      CREATE TABLE moons (
+        moons_id SERIAL PRIMARY KEY,
+        orbits VARCHAR NOT NULL,
+        moon_name VARCHAR NOT NULL,
+        distance_from_planet VARCHAR NOT NULL,
+        gravity VARCHAR NOT NULL,
+        mass_value VARCHAR NOT NULL,
+        mass_exponent VARCHAR NOT NULL,
+        mean_radius VARCHAR NOT NULL
+      );`);
+    })
     .then(() => {
       const insertTopicsQueryStr = format(
         "INSERT INTO topics (slug, description) VALUES %L;",
@@ -254,6 +296,108 @@ CREATE TABLE planet_names (
         galaxyData.map(({ galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline }) => [galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline])
       )
       return db.query(insertGalaxyQueryStr)
+    })
+
+    .then(() => {
+      const insertPlanetsQueryStr = format(
+        `
+        INSERT INTO planets
+        (
+          name,
+          average_temp, 
+          highest_recorded_temp, 
+          lowest_recorded_temp, 
+          planet_type, 
+          density,
+          dimension,
+          distance_from_sun,
+          gravity,
+          mass_value,
+          number_of_moons,
+          orbital_period_years,
+          mass_exponent,
+          mean_radius,
+          planet_description
+          
+        )
+        VALUES
+        %L
+        RETURNING *;
+        `,
+        planetsData.map(({ 
+          name,
+          average_temp, 
+          highest_recorded_temp, 
+          lowest_recorded_temp, 
+          planet_type, 
+          density,
+          dimension,
+          distance_from_sun,
+          gravity,
+          mass_value,
+          number_of_moons,
+          orbital_period_years,
+          mass_exponent,
+          mean_radius,
+          planet_description
+        }) => 
+        [
+          name,
+          average_temp, 
+          highest_recorded_temp, 
+          lowest_recorded_temp, 
+          planet_type, 
+          density,
+          dimension,
+          distance_from_sun,
+          gravity,
+          mass_value,
+          number_of_moons,
+          orbital_period_years,
+          mass_exponent,
+          mean_radius,
+          planet_description
+        ])
+      )
+      return db.query(insertPlanetsQueryStr)
+    })
+    .then(() => {
+      const insertMoonsQueryStr = format(
+        `
+        INSERT INTO moons
+        (
+          orbits,
+          moon_name,
+          distance_from_planet,
+          gravity,
+          mass_value,
+          mass_exponent,
+          mean_radius
+        )
+        VALUES
+        %L
+        RETURNING *;
+        `,
+        moonData.map(({ 
+          orbits,
+          moon_name,
+          distance_from_planet,
+          gravity,
+          mass_value,
+          mass_exponent,
+          mean_radius
+        }) => 
+        [
+          orbits,
+          moon_name,
+          distance_from_planet,
+          gravity,
+          mass_value,
+          mass_exponent,
+          mean_radius
+        ])
+      )
+      return db.query(insertMoonsQueryStr)
     })
 
 };
