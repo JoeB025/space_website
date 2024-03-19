@@ -14,7 +14,7 @@ module.exports = [
     orbital_period_years: 0.24, // Earth years
     mass_exponent: 24,
     mean_radius: 2439.7, // km,
-    img_url: "https://img.freepik.com/free-psd/mercury-planet-foreign-planet-isolated-transparent-background_191095-20243.jpg?w=740&t=st=1710859573~exp=1710860173~hmac=cb7b61e955d8c28a55e86069098fd67c64fb4618fe3b7e5ea5fa22e5d1ab91cf",
+    img_url: "https://cdn.mos.cms.futurecdn.net/fjbeeRiPRQjQNhizwy7cWX-1200-80.jpg",
     planet_description: 
     `Mercury, named after the swift messenger of the gods 
     in Roman mythology, is the smallest and innermost planet 
@@ -54,7 +54,7 @@ module.exports = [
     orbital_period_years: 0.62, // Earth years
     mass_exponent: 24,
     mean_radius: 6051.8, // km
-    img_url: "https://images.pexels.com/photos/5476413/pexels-photo-5476413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img_url: "https://s7d1.scene7.com/is/image/CENODS/09911-feature3-venus-social?$twitter$",
     planet_description: 
     `Venus, named after the Roman goddess of love and beauty, 
     is often referred to as Earth's "sister planet" due to its similar size and composition. 
@@ -94,7 +94,7 @@ module.exports = [
     orbital_period_years: 1, // Earth year
     mass_exponent: 24,
     mean_radius: 6371, // km
-    img_url: "https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img_url: "https://climate.nasa.gov/system/internal_resources/details/original/309_ImageWall5_768px-60.jpg",
     planet_description: 
     `Earth is the third planet from the Sun and the only known planet to support life. 
     It is home to a diverse array of ecosystems, ranging from oceans and forests to deserts and 
@@ -133,7 +133,7 @@ module.exports = [
     orbital_period_years: 1.88, // Earth years
     mass_exponent: 16,
     mean_radius: 11.1, // km
-    img_url: "https://www.nasa.gov/wp-content/uploads/2021/01/welcome_to_mars_-_resize.jpg",
+    img_url: "https://starwalk.space/gallery/images/mars-the-ultimate-guide/1920x1080.jpg",
     planet_description: 
     `Mars, often called the "Red Planet" due to its rusty-red appearance, is the fourth planet from the Sun in our solar system. It is a terrestrial planet with a thin atmosphere, consisting mainly of carbon dioxide.
     With a diameter of about 6,779 kilometers (4,212 miles), Mars is smaller than Earth, but it shares some similarities with our planet. Like Earth, Mars has distinct seasons, polar ice caps, and surface features such as valleys, deserts, and polar ice caps.
@@ -156,7 +156,7 @@ module.exports = [
     orbital_period_years: 11.86, // Earth years
     mass_exponent: 27,
     mean_radius: 69911, // km
-    img_url: "https://science.nasa.gov/wp-content/uploads/2023/09/PIA02873.jpg?w=2048&format=webp",
+    img_url: "https://spaceplace.nasa.gov/all-about-jupiter/en/jupiter_turbulent-atmosphere.en.jpg",
     planet_description: 
     `Jupiter, named after the king of the Roman gods, is the largest planet in our solar system. It is a gas giant, composed mainly of hydrogen and helium, with no solid surface.
 
@@ -183,7 +183,7 @@ module.exports = [
     orbital_period_years: 29.46, // Earth years
     mass_exponent: 26,
     mean_radius: 58232, // km
-    img_url: "https://science.nasa.gov/wp-content/uploads/2023/04/stsci-h-p2043a-f-1592x1137-1.png?w=2048&format=webp",
+    img_url: "https://maxpolyakov.com/wp-content/uploads/2023/10/the-mystery-of-saturns-rings-history-of-the-study-of-the-sixth-planet.jpg",
     planet_description: 
     `Saturn, named after the Roman god of agriculture, is the sixth planet from the Sun and the second-largest planet in our solar system, after Jupiter. It is known for its distinctive rings, which are made up of ice, dust, and rock particles.
 
@@ -212,7 +212,7 @@ module.exports = [
     orbital_period_years: 84, // Earth years
     mass_exponent: 25,
     mean_radius: 25559, // km
-    img_url: "https://science.nasa.gov/wp-content/uploads/2023/09/poster_uranus_front_c.jpg?w=2048&format=webp",
+    img_url: "https://imageio.forbes.com/specials-images/imageserve/5f91806c76fcfa4a1e885d7c/Uranus-will-this-week-be-easy-to-see-for-one-night-only-just-north-of-a-crescent/960x0.jpg?format=jpg&width=960",
     planet_description: 
     `Uranus, named after the Greek god of the sky, is the seventh planet from the Sun and the third-largest planet in our solar system. It is unique among the planets because it rotates on its side, with its axis tilted almost perpendicular to its orbit.
 
@@ -239,7 +239,7 @@ module.exports = [
     orbital_period_years: 165, // Earth years
     mass_exponent: 26,
     mean_radius: 24622, // km,
-    img_url: "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img_url: "https://cdn.mos.cms.futurecdn.net/PezBzd9Fehsq9XWgWMauVV-1200-80.jpg",
     planet_description: 
     `Neptune, named after the Roman god of the sea, is the eighth and farthest planet from the Sun in our solar system. It is one of the four gas giants, along with Jupiter, Saturn, and Uranus, and is composed mainly of hydrogen, helium, and methane.
 
