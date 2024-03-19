@@ -4,19 +4,7 @@ module.exports = [
     topic: 'Dwarf Planet',
     title: 'Weird white dwarf star has a metal scar after eating a planet',
     author: 'Leah Crane',
-    body: `Astronomers have spotted a white dwarf star with a patch of metal near one of its magnetic poles, 
-    which probably formed when the star devoured a small planet. \n Astronomers have found a white dwarf 
-    star with a strange metallic scar on its surface. This blemish probably formed when the star ripped up 
-    and ate a small planet in its orbit. \n Researchers often spot white dwarfs with traces of metal in 
-    their atmospheres from planets that have fallen into the star. Astronomers have long thought the 
-    metals should be distributed evenly across the surfaces of these so-called polluted white dwarfs. 
-    But Jay Farihi at University College London and his colleagues have found one with an odd, concentrated 
-    patch of metal. \n The researchers monitored the star, called WD 0816-310, over a period of two months using 
-    the Very Large Telescope in Chile. They found an opaque patch of metal over one of the white dwarf's magnetic poles, 
-    blocking some of the star's light as it rotated. This position indicates the material was probably funnelled into the 
-    star by its magnetic field. “This is an identical process to the one that causes the aurora on Earth: charged 
-    particles following the magnetic field to the surface,” says Farihi. \n The planet that WD 0816-310 destroyed was 
-    small - probably around the same size as the asteroid Vesta in our solar system, about 525 kilometres across. 
+    body: `Astronomers have spotted a white dwarf star with a patch of metal near one of its magnetic poles, which probably formed when the star devoured a small planet. \n Astronomers have found a white dwarf star with a strange metallic scar on its surface. This blemish probably formed when the star ripped up and ate a small planet in its orbit. \n Researchers often spot white dwarfs with traces of metal in their atmospheres from planets that have fallen into the star. Astronomers have long thought the metals should be distributed evenly across the surfaces of these so-called polluted white dwarfs. But Jay Farihi at University College London and his colleagues have found one with an odd, concentrated patch of metal. \n The researchers monitored the star, called WD 0816-310, over a period of two months using the Very Large Telescope in Chile. They found an opaque patch of metal over one of the white dwarf's magnetic poles, blocking some of the star's light as it rotated. This position indicates the material was probably funnelled into the star by its magnetic field. “This is an identical process to the one that causes the aurora on Earth: charged particles following the magnetic field to the surface,” says Farihi. \n The planet that WD 0816-310 destroyed was small - probably around the same size as the asteroid Vesta in our solar system, about 525 kilometres across. 
     Its innards are now displayed prominently on its host star’s surface, which could make it relatively easy to 
     study what its geochemistry was like before it was devoured. Such studies may even be among the best ways to 
     observe small worlds beyond our solar system, albeit after their demise. \n And there may be many more scarred 

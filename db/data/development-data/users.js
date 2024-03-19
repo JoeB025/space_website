@@ -78,10 +78,70 @@ module.exports = [
       'https://upload.wikimedia.org/wikipedia/en/4/4c/GokumangaToriyama.png'
   },
   {
+    username: 'MrDarkKnight',
+    name: 'Batman',
+    avatar_url:
+      'https://images.pexels.com/photos/2304123/pexels-photo-2304123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  },
+  {
+    username: 'MadamKitty',
+    name: 'Cat Woman',
+    avatar_url:
+      'https://images.pexels.com/photos/18772801/pexels-photo-18772801/free-photo-of-portrait-of-woman-in-cat-costume-in-blur.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  },
+  {
   username: 'SuperLeahCrane',
   name : "Leah Crane",
   avatar_url:
-  'https://upload.wikimedia.org/wikipedia/en/en/'
-  }
+  'https://images.pexels.com/photos/3180275/pexels-photo-3180275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  },
+  {
+    username: 'BigEl',
+    name : "Elmo",
+    avatar_url:
+    'https://static.wikia.nocookie.net/muppet/images/5/5a/Elmo-elmo-elmo.jpg/revision/latest?cb=20110917000614'
+    },
+    {
+      username: 'SuperWoman',
+      name : "Super Woman",
+      avatar_url:
+      'https://mir-s3-cdn-cf.behance.net/projects/404/322613173800337.Y3JvcCwyNzYxLDIxNjAsODEzLDA.png'
+    },
+    {
+      username: 'KingOfTheNorth',
+      name : "John Snow",
+      avatar_url:
+      'https://awoiaf.westeros.org/images/a/a0/Cristi_Balanescu_Jon_SnowGhost.png'
+    },
+    {
+      username: 'I-AM-THE-KING',
+      name : "King Joffrey Baratheon",
+      avatar_url:
+      'https://upload.wikimedia.org/wikipedia/en/b/bd/Joffrey_Baratheon-Jack_Gleeson.jpg'
+    },
+    {
+      username: 'Snakeless7',
+      name : "Theon Grayjoy",
+      avatar_url:
+      'https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/4/41/Theon_greyjoy_photo.jpg'
+    },
+    {
+      username: 'Pipe-Cleaner-10',
+      name : "Andy Dufresne",
+      avatar_url:
+      'https://static.wikia.nocookie.net/near-pure-good-hero/images/3/3b/AndyDufresne.jpg/revision/latest?cb=20210304213438'
+    },
+    {
+      username: 'SwimmerMan',
+      name : "Tony Montana",
+      avatar_url:
+      'https://pyxis.nymag.com/v1/imgs/0d1/50f/4d32b735c9886cbcb6f941ebe36f6ed3a7-19-scarface.rsquare.w400.jpg'
+    },
+    {
+      username: 'TheCretaceousKing',
+      name : "Rexy",
+      avatar_url:
+      'https://static.wikia.nocookie.net/jurassicpark/images/a/ac/Jurassic_Park_~_Rexy.png/revision/latest?cb=20220816231145'
+    }
 ];
 

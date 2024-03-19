@@ -1,0 +1,27 @@
+const { selectArticles, selectOrderedArticles } = require('../models/articles.model')
+const { checkArticles } = require('../db/seeds/utils')
+
+
+exports.getArticles = (req, res, next) => {
+  const { article_id } = req.params;
+
+  selectArticles(article_id)
+    .then((article) => {
+      res.status(200).send({ article });
+    })
+    .catch((err) => {
+      next(err);
+    });
+};
+
+
+exports.getOrderedArticles = (req, res, next) => {
+  const { sort_by, order, topic } = req.query 
+
+  selectOrderedArticles(sort_by, order, topic).then((article) => {
+    res.status(200).send({ article });
+  })
+  .catch((err) => {
+    next(err)
+  })
+}

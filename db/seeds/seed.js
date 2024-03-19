@@ -16,7 +16,8 @@ const seed = ({
   blackHoleData,
   galaxyData,
   planetsData,
-  moonData
+  moonData,
+  starsData
 }) => {
   return db
     .query(`DROP TABLE IF EXISTS comments;`)
@@ -46,6 +47,9 @@ const seed = ({
     })
     .then(() => {
       return db.query("DROP TABLE IF EXISTS moons;");
+    })
+    .then(() => {
+      return db.query("DROP TABLE IF EXISTS stars;");
     })
     .then(() => {
       const topicsTablePromise = db.query(`
@@ -103,7 +107,8 @@ CREATE TABLE planet_names (
       CREATE TABLE astronomy_info (
         astronomy_info_id SERIAL PRIMARY KEY,
         topic VARCHAR NOT NULL,
-        description VARCHAR NOT NULL
+        description VARCHAR NOT NULL,
+        img_url VARCHAR NOT NULL
       );`);
     })
 
@@ -129,6 +134,7 @@ CREATE TABLE planet_names (
         number_of_stars VARCHAR NOT NULL,
         visible_galactic_center BOOLEAN NOT NULL,
         constellation VARCHAR NOT NULL,
+        img_url VARCHAR NOT NULL,
         general_info VARCHAR NOT NULL,
         observation_history VARCHAR NOT NULL,
         timeline VARCHAR NOT NULL
@@ -152,6 +158,7 @@ CREATE TABLE planet_names (
         orbital_period_years FLOAT NOT NULL,
         mass_exponent INTEGER NOT NULL,
         mean_radius FLOAT NOT NULL,
+        img_url VARCHAR NOT NULL,
         planet_description TEXT NOT NULL
  
       );`);
@@ -167,6 +174,22 @@ CREATE TABLE planet_names (
         mass_value VARCHAR NOT NULL,
         mass_exponent VARCHAR NOT NULL,
         mean_radius VARCHAR NOT NULL
+      );`);
+    })
+    .then(() => {
+      return db.query(`
+      CREATE TABLE stars (
+        stars_id SERIAL PRIMARY KEY,
+        name VARCHAR NOT NULL,
+        type VARCHAR NOT NULL,
+        mass VARCHAR NOT NULL,
+        radius VARCHAR NOT NULL,
+        temperature VARCHAR NOT NULL,
+        luminosity VARCHAR NOT NULL,
+        age VARCHAR NOT NULL,
+        description VARCHAR NOT NULL,
+        size_comparison VARCHAR NOT NULL,
+        img_url VARCHAR NOT NULL
       );`);
     })
     .then(() => {
@@ -259,12 +282,12 @@ CREATE TABLE planet_names (
       const insertAstronomyQueryStr = format(
         `
         INSERT INTO astronomy_info
-        (topic, description)
+        (topic, description, img_url)
         VALUES
         %L
         RETURNING *;
         `,
-        astronomyData.map(({ topic, description }) => [topic, description])
+        astronomyData.map(({ topic, description, img_url }) => [topic, description, img_url])
       )
       return db.query(insertAstronomyQueryStr) 
     })
@@ -288,12 +311,12 @@ CREATE TABLE planet_names (
       const insertGalaxyQueryStr = format(
         `
         INSERT INTO galaxies
-        (galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline)
+        (galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, img_url, general_info, observation_history, timeline)
         VALUES
         %L
         RETURNING *;
         `,
-        galaxyData.map(({ galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline }) => [galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, general_info, observation_history, timeline])
+        galaxyData.map(({ galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, img_url, general_info, observation_history, timeline }) => [galaxy_name, type, size, distance_from_earth, number_of_stars, visible_galactic_center, constellation, img_url, general_info, observation_history, timeline])
       )
       return db.query(insertGalaxyQueryStr)
     })
@@ -317,6 +340,7 @@ CREATE TABLE planet_names (
           orbital_period_years,
           mass_exponent,
           mean_radius,
+          img_url,
           planet_description
           
         )
@@ -339,6 +363,7 @@ CREATE TABLE planet_names (
           orbital_period_years,
           mass_exponent,
           mean_radius,
+          img_url,
           planet_description
         }) => 
         [
@@ -356,6 +381,7 @@ CREATE TABLE planet_names (
           orbital_period_years,
           mass_exponent,
           mean_radius,
+          img_url,
           planet_description
         ])
       )
@@ -398,6 +424,54 @@ CREATE TABLE planet_names (
         ])
       )
       return db.query(insertMoonsQueryStr)
+    })
+
+    .then(() => {
+      const insertStarsQueryStr = format(
+        `
+        INSERT INTO stars
+        (
+          name,
+          type,
+          mass,
+          radius,
+          temperature,
+          luminosity,
+          age,
+          description,
+          size_comparison,
+          img_url
+        )
+        VALUES
+        %L
+        RETURNING *;
+        `,
+        starsData.map(({ 
+          name,
+          type,
+          mass,
+          radius,
+          temperature,
+          luminosity,
+          age,
+          description,
+          size_comparison,
+          img_url
+        }) => 
+        [
+          name,
+          type,
+          mass,
+          radius,
+          temperature,
+          luminosity,
+          age,
+          description,
+          size_comparison,
+          img_url
+        ])
+      )
+      return db.query(insertStarsQueryStr)
     })
 
 };

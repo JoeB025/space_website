@@ -1,22 +1,45 @@
-const express = require('express')
-const app = express()
-const { getTopics } = require('../controllers/topics.controller')
-const { getAllData } = require('../controllers/api.controller')
-const cors = require('cors');
-
+const express = require("express");
+const app = express();
+const { getTopics } = require("../controllers/topics.controller");
+const { getAllData } = require("../controllers/api.controller");
+const { getArticles, getOrderedArticles } = require("../controllers/articles.controller");
+const cors = require("cors");
 
 app.use(cors());
 app.use(express.json());
 
-app.get('/api/topics', getTopics); // gets the topics data
+app.get("/api/topics", getTopics); // gets the topics data
 
-app.get('/api', getAllData); // gets all the data 
+app.get("/api", getAllData); // gets all the data
 
+app.get("/api/articles/:article_id", getArticles); // gets the articles by id
 
-app.all('*', (req, res) => {
-  res.status(404).send({Status: 404, msg : 'endpoint not found'})
+app.get('/api/articles', getOrderedArticles) // gets articles in an ordered format 
 
-}) // rejects all promises where an endpoint is not found
+app.all("*", (req, res) => {
+  res.status(404).send({ Status: 404, msg: "endpoint not found" });
+}); // rejects all promises where an endpoint is not found
 
+app.use((err, req, res, next) => {
+  // console.log(err)
+  // console.log(err.code)
+  // console.log(err.detail)
 
-module.exports = app 
+  if (err.code === "23503" && err.detail.includes("article_id")) {
+    res.status(404).send({ Status: 404, msg: "article does not exist" });
+  } else if (err.code === "23503" && err.detail.includes("user")) {
+    res.status(404).send({ Status: 404, msg: "Username not found" });
+  } else if (
+    err.code === "22P02" ||
+    err.code === "23502" ||
+    err.code === "42883" ||
+    err.code === "42703"
+  ) {
+    res.status(400).send({ msg: "Bad request" });
+  } else if (err.status && err.msg) {
+    res.status(err.status).send({ msg: err.msg });
+  }
+  next();
+});
+
+module.exports = app;
