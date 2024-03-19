@@ -6,7 +6,7 @@
     "description": "serves an array of all topics",
     "queries": [],
     "exampleResponse": {
-      "topics": [{ "slug": "football", "description": "Footie!" }]
+      "topics": [{ "slug": "Planet", "description": "How do they mean when they say a planet is a gas planet?" }]
     }
   }
 }
