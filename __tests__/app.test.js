@@ -62,7 +62,6 @@ describe("app", () => {
   });
 });
 
-
 // api/planetNames
 
 describe("app", () => {
@@ -117,17 +116,17 @@ describe("app", () => {
         .expect(200)
         .then((res) => {
           res.body.stars.forEach((star) => {
-            expect(typeof star.stars_id).toBe('number')
-            expect(typeof star.name).toBe('string')
-            expect(typeof star.type).toBe('string')
-            expect(typeof star.mass).toBe('string')
-            expect(typeof star.radius).toBe('string')
-            expect(typeof star.temperature).toBe('string')
-            expect(typeof star.luminosity).toBe('string')
-            expect(typeof star.age).toBe('string')
-            expect(typeof star.description).toBe('string')
-            expect(typeof star.size_comparison).toBe('string')
-            expect(typeof star.img_url).toBe('string')
+            expect(typeof star.stars_id).toBe("number");
+            expect(typeof star.name).toBe("string");
+            expect(typeof star.type).toBe("string");
+            expect(typeof star.mass).toBe("string");
+            expect(typeof star.radius).toBe("string");
+            expect(typeof star.temperature).toBe("string");
+            expect(typeof star.luminosity).toBe("string");
+            expect(typeof star.age).toBe("string");
+            expect(typeof star.description).toBe("string");
+            expect(typeof star.size_comparison).toBe("string");
+            expect(typeof star.img_url).toBe("string");
           });
         });
     });
@@ -152,15 +151,15 @@ describe("app", () => {
         .expect(200)
         .then((res) => {
           res.body.astronomy.forEach((item) => {
-            expect(typeof item.astronomy_info_id).toBe("number")
-            expect(typeof item.topic).toBe("string")
-            expect(typeof item.description).toBe("string")
-            expect(typeof item.img_url).toBe("string")
+            expect(typeof item.astronomy_info_id).toBe("number");
+            expect(typeof item.topic).toBe("string");
+            expect(typeof item.description).toBe("string");
+            expect(typeof item.img_url).toBe("string");
           });
         });
     });
-  })
-})
+  });
+});
 
 describe("app", () => {
   describe("/api/black_holes", () => {
@@ -170,17 +169,17 @@ describe("app", () => {
         .expect(200)
         .then((res) => {
           res.body.blackHoles.forEach((item) => {
-            expect(typeof item.black_hole_id).toBe("number")
-            expect(typeof item.name).toBe("string")
-            expect(typeof item.type).toBe("string")
-            expect(typeof item.mass).toBe("string")
-            expect(typeof item.distance).toBe("string")
-            expect(typeof item.description).toBe("string")
+            expect(typeof item.black_hole_id).toBe("number");
+            expect(typeof item.name).toBe("string");
+            expect(typeof item.type).toBe("string");
+            expect(typeof item.mass).toBe("string");
+            expect(typeof item.distance).toBe("string");
+            expect(typeof item.description).toBe("string");
           });
         });
     });
-  })
-})
+  });
+});
 
 describe("app", () => {
   describe("/api/galaxies", () => {
@@ -190,22 +189,21 @@ describe("app", () => {
         .expect(200)
         .then((res) => {
           res.body.galaxy.forEach((galaxy) => {
-            expect(typeof galaxy.galaxy_id).toBe("number")
-            expect(typeof galaxy.galaxy_name).toBe("string")
-            expect(typeof galaxy.type).toBe("string")
-            expect(typeof galaxy.size).toBe("string")
-            expect(typeof galaxy.distance_from_earth).toBe("string")
-            expect(typeof galaxy.number_of_stars).toBe("string")
-            expect(typeof galaxy.visible_galactic_center).toBe("boolean")
-            expect(typeof galaxy.constellation).toBe("string")
-            expect(typeof galaxy.img_url).toBe("string")
-            expect(typeof galaxy.general_info).toBe("string")
+            expect(typeof galaxy.galaxy_id).toBe("number");
+            expect(typeof galaxy.galaxy_name).toBe("string");
+            expect(typeof galaxy.type).toBe("string");
+            expect(typeof galaxy.size).toBe("string");
+            expect(typeof galaxy.distance_from_earth).toBe("string");
+            expect(typeof galaxy.number_of_stars).toBe("string");
+            expect(typeof galaxy.visible_galactic_center).toBe("boolean");
+            expect(typeof galaxy.constellation).toBe("string");
+            expect(typeof galaxy.img_url).toBe("string");
+            expect(typeof galaxy.general_info).toBe("string");
           });
         });
     });
-  })
-})
-
+  });
+});
 
 describe("app", () => {
   describe("/api/planets", () => {
@@ -214,31 +212,30 @@ describe("app", () => {
         .get("/api/planets")
         .expect(200)
         .then((res) => {
-          expect(res.body.planet.length).toBe(8)
+          expect(res.body.planet.length).toBe(8);
           res.body.planet.forEach((planet) => {
-            expect(typeof planet.planets_id).toBe("number")
-            expect(typeof planet.name).toBe("string")
-            expect(typeof planet.average_temp).toBe("number")
-            expect(typeof planet.highest_recorded_temp).toBe("string")
-            expect(typeof planet.lowest_recorded_temp).toBe("string")
-            expect(typeof planet.planet_type).toBe("string")
-            expect(typeof planet.density).toBe("number")
-            expect(typeof planet.dimension).toBe("string")
-            expect(typeof planet.distance_from_sun).toBe("number")
-            expect(typeof planet.gravity).toBe("number")
-            expect(typeof planet.mass_value).toBe("number")
-            expect(typeof planet.number_of_moons).toBe("number")
-            expect(typeof planet.orbital_period_years).toBe("number")
-            expect(typeof planet.mass_exponent).toBe("number")
-            expect(typeof planet.mean_radius).toBe("number")
-            expect(typeof planet.img_url).toBe("string")
-            expect(typeof planet.planet_description).toBe("string")
+            expect(typeof planet.planets_id).toBe("number");
+            expect(typeof planet.name).toBe("string");
+            expect(typeof planet.average_temp).toBe("number");
+            expect(typeof planet.highest_recorded_temp).toBe("string");
+            expect(typeof planet.lowest_recorded_temp).toBe("string");
+            expect(typeof planet.planet_type).toBe("string");
+            expect(typeof planet.density).toBe("number");
+            expect(typeof planet.dimension).toBe("string");
+            expect(typeof planet.distance_from_sun).toBe("number");
+            expect(typeof planet.gravity).toBe("number");
+            expect(typeof planet.mass_value).toBe("number");
+            expect(typeof planet.number_of_moons).toBe("number");
+            expect(typeof planet.orbital_period_years).toBe("number");
+            expect(typeof planet.mass_exponent).toBe("number");
+            expect(typeof planet.mean_radius).toBe("number");
+            expect(typeof planet.img_url).toBe("string");
+            expect(typeof planet.planet_description).toBe("string");
           });
         });
     });
-  })
-})
-
+  });
+});
 
 describe("app", () => {
   describe("/api/black_holes", () => {
@@ -248,17 +245,17 @@ describe("app", () => {
         .expect(200)
         .then((res) => {
           res.body.blackHoles.forEach((item) => {
-            expect(typeof item.black_hole_id).toBe("number")
-            expect(typeof item.name).toBe("string")
-            expect(typeof item.type).toBe("string")
-            expect(typeof item.mass).toBe("string")
-            expect(typeof item.distance).toBe("string")
-            expect(typeof item.description).toBe("string")
+            expect(typeof item.black_hole_id).toBe("number");
+            expect(typeof item.name).toBe("string");
+            expect(typeof item.type).toBe("string");
+            expect(typeof item.mass).toBe("string");
+            expect(typeof item.distance).toBe("string");
+            expect(typeof item.description).toBe("string");
           });
         });
     });
-  })
-})
+  });
+});
 
 describe("app", () => {
   describe("/api/galaxies", () => {
@@ -267,23 +264,23 @@ describe("app", () => {
         .get("/api/galaxies")
         .expect(200)
         .then((res) => {
-          expect(res.body.galaxy.length > 0).toBe(true)
+          expect(res.body.galaxy.length > 0).toBe(true);
           res.body.galaxy.forEach((galaxy) => {
-            expect(typeof galaxy.galaxy_id).toBe("number")
-            expect(typeof galaxy.galaxy_name).toBe("string")
-            expect(typeof galaxy.type).toBe("string")
-            expect(typeof galaxy.size).toBe("string")
-            expect(typeof galaxy.distance_from_earth).toBe("string")
-            expect(typeof galaxy.number_of_stars).toBe("string")
-            expect(typeof galaxy.visible_galactic_center).toBe("boolean")
-            expect(typeof galaxy.constellation).toBe("string")
-            expect(typeof galaxy.img_url).toBe("string")
-            expect(typeof galaxy.general_info).toBe("string")
+            expect(typeof galaxy.galaxy_id).toBe("number");
+            expect(typeof galaxy.galaxy_name).toBe("string");
+            expect(typeof galaxy.type).toBe("string");
+            expect(typeof galaxy.size).toBe("string");
+            expect(typeof galaxy.distance_from_earth).toBe("string");
+            expect(typeof galaxy.number_of_stars).toBe("string");
+            expect(typeof galaxy.visible_galactic_center).toBe("boolean");
+            expect(typeof galaxy.constellation).toBe("string");
+            expect(typeof galaxy.img_url).toBe("string");
+            expect(typeof galaxy.general_info).toBe("string");
           });
         });
     });
-  })
-})
+  });
+});
 describe("app", () => {
   describe("/api/moons", () => {
     test("GET /moons should return an array of objects for each planets in the solar System and a status code of 200.", () => {
@@ -291,21 +288,21 @@ describe("app", () => {
         .get("/api/moons")
         .expect(200)
         .then((res) => {
-          expect(res.body.moon.length > 0).toBe(true)
+          expect(res.body.moon.length > 0).toBe(true);
           res.body.moon.forEach((moon) => {
-            expect(typeof moon.moons_id).toBe("number")
-            expect(typeof moon.orbits).toBe('string')
-            expect(typeof moon.moon_name).toBe("string")
-            expect(typeof moon.distance_from_planet).toBe('string')
-            expect(typeof moon.gravity).toBe('string')
-            expect(typeof moon.mass_value).toBe('string')
-            expect(typeof moon.mass_exponent).toBe('string')
-            expect(typeof moon.mean_radius).toBe('string')
+            expect(typeof moon.moons_id).toBe("number");
+            expect(typeof moon.orbits).toBe("string");
+            expect(typeof moon.moon_name).toBe("string");
+            expect(typeof moon.distance_from_planet).toBe("string");
+            expect(typeof moon.gravity).toBe("string");
+            expect(typeof moon.mass_value).toBe("string");
+            expect(typeof moon.mass_exponent).toBe("string");
+            expect(typeof moon.mean_radius).toBe("string");
           });
         });
     });
-  })
-})
+  });
+});
 
 describe("app", () => {
   describe("/api/articles:article_id", () => {
@@ -497,3 +494,88 @@ describe("app", () => {
 });
 
 // post / api/articles/:article_id/comments
+
+describe("app", () => {
+  describe("POST /api/articles/:article_id/comments", () => {
+    test("Check data is posted with correct object keys and data", () => {
+      return request(app)
+        .post("/api/articles/1/comments")
+        .send({
+          body: "This is a test comment",
+          username: "KingKakarot",
+        })
+        .expect(201)
+        .then((res) => {
+          expect(res.body.comment[0]).toMatchObject({
+            comment_id: 18,
+            body: "This is a test comment",
+            votes: 0,
+            author: "KingKakarot",
+            article_id: 1,
+          });
+          expect(typeof res.body.comment[0].body).toBe("string");
+          expect(typeof res.body.comment[0].author).toBe("string");
+          expect(res.body.comment[0].hasOwnProperty("created_at")).toBe(true);
+        });
+    });
+    test("POST:404 responds with an appropriate status and error message when provided with an invalid username (no username exists)", () => {
+      return request(app)
+        .post("/api/articles/6/comments")
+        .send({
+          body: "this is the body",
+          username: "QueenKakarot",
+        })
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("Username not found");
+        });
+    });
+    test("POST:404 responds with an appropriate status and error message when making a post to an article that does not yet exist (article has not yet been created)", () => {
+      return request(app)
+        .post("/api/articles/7/comments")
+        .send({
+          body: "this is the body",
+          username: "KingKakarot",
+        })
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("article does not exist");
+        });
+    });
+    test("POST:404 responds with an appropriate status and error message when an invalid endpoint", () => {
+      return request(app)
+        .post("/api/bananas/1/comments")
+        .send({
+          body: "this is the body",
+          username: "KingKakarot",
+        })
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+    test("POST:404 responds with an appropriate status and error message when provided with an article that is yet to be created", () => {
+      return request(app)
+        .post("/api/articles/99999999/comments")
+        .send({
+          body: "this is the body",
+          username: "KingKakarot",
+        })
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("article does not exist");
+        });
+    });
+    test("POST:400 responds with an appropriate status and error message when not provided with a username", () => {
+      return request(app)
+        .post("/api/articles/1/comments")
+        .send({
+          body: "this is the body",
+        })
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
+    });
+  });
+});

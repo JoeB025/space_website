@@ -1,4 +1,4 @@
-const { selectArticles, selectOrderedArticles, selectArticleComments } = require('../models/articles.model')
+const { selectArticles, selectOrderedArticles, selectArticleComments, insertNewComment } = require('../models/articles.model')
 const { checkArticles } = require('../db/seeds/utils')
 
 
@@ -37,6 +37,20 @@ exports.getArticleComments = (req, res, next) => {
   Promise.all([checkForComments, sortedComments])
   .then((comments) => {
     res.status(200).send({comments : comments[1]});
+  })
+  .catch((err) => {
+    next(err)
+  })
+}
+
+
+exports.insertComments = (req, res, next) => {
+  const newComment = req.body;
+  const { article_id } = req.params
+
+  insertNewComment(newComment, article_id)
+  .then((comment) => {
+    res.status(201).send({comment})
   })
   .catch((err) => {
     next(err)

@@ -63,8 +63,6 @@ exports.selectOrderedArticles = (sort_by = 'created_at', order = 'desc', topic =
 }
 
 
-
-
 exports.selectArticleComments = (article_id, sort_by = 'created_at', order = 'desc') => {
   let query =`
   SELECT *
@@ -73,6 +71,27 @@ exports.selectArticleComments = (article_id, sort_by = 'created_at', order = 'de
   ORDER BY ${sort_by} ${order};
   `
   return db.query(query, [article_id]).then((res) => {
+    return res.rows
+  })
+}
+
+
+exports.insertNewComment = ({body, username}, article_id) => {
+
+  let query =
+  `
+  INSERT INTO comments (body, author, article_id)
+  VALUES ($1, $2, $3)
+  RETURNING *
+  `;
+  return db.query(query, [body, username, article_id])
+  .then((res) => {
+    if (res.rows.length === 0) {
+      return Promise.reject({
+        status: 404,
+        msg: 'article does not exist'
+      })
+    }
     return res.rows
   })
 }

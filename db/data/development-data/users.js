@@ -114,16 +114,40 @@ module.exports = [
       'https://awoiaf.westeros.org/images/a/a0/Cristi_Balanescu_Jon_SnowGhost.png'
     },
     {
+      username: 'Hand_of_the_Queen',
+      name: 'Tyrion Lannister',
+      avatar_url:
+      'https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Tyrion_Lannister-Peter_Dinklage.jpg/220px-Tyrion_Lannister-Peter_Dinklage.jpg'
+    },
+    {
       username: 'I-AM-THE-KING',
       name : "King Joffrey Baratheon",
       avatar_url:
       'https://upload.wikimedia.org/wikipedia/en/b/bd/Joffrey_Baratheon-Jack_Gleeson.jpg'
     },
     {
+      username: 'Ser_BlackWater_Bronn',
+      name : "Bronn",
+      avatar_url:
+      'https://www.nme.com/wp-content/uploads/2019/05/Bronn2.jpeg'
+    },
+    {
+      username: 'The_Mountain',
+      name : "Ser Gregor Clegane",
+      avatar_url:
+      'https://static.wikia.nocookie.net/gameofthrones/images/8/81/GregorGregorLightenedProfile.png/revision/latest?cb=20190724144505'
+    },
+    {
       username: 'Snakeless7',
       name : "Theon Grayjoy",
       avatar_url:
       'https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/4/41/Theon_greyjoy_photo.jpg'
+    },
+    {
+      username: 'MrSadistic',
+      name: "Ramsay Bolton",
+      avatar_url:
+      'https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/06/22/10/Ramsay_Bolton.jpg?width=1200'
     },
     {
       username: 'Pipe-Cleaner-10',
@@ -142,6 +166,30 @@ module.exports = [
       name : "Rexy",
       avatar_url:
       'https://static.wikia.nocookie.net/jurassicpark/images/a/ac/Jurassic_Park_~_Rexy.png/revision/latest?cb=20220816231145'
-    }
+    },
+    {
+      username: 'TheProtector',
+      name : "General Nanisca",
+      avatar_url:
+      'https://npr.brightspotcdn.com/dims4/default/091bb74/2147483647/strip/true/crop/5110x3844+0+0/resize/880x662!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2022%2F09%2F16%2Fdf-08096_custom-9f91d999dae3271bee8d6305510c3609da3475ba.jpg'
+    },
+    {
+      username: 'TheGreatestActor',
+      name : "Morgan Freeman",
+      avatar_url:
+      'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSbAvDCGoPfj0QSdNsiO0E0gJ2gtyBaF_IJ46iLrO1ckq4WYNfUwPH8lMg5mNZIfsJ2l3dUNKuSBekF8Yg'
+    },
+    {
+      username: 'StrandedSurvivor',
+      name : "Chuck Noland",
+      avatar_url:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqaWKDoarJRgiJJuDa9LX8V42l009a6kc4w&usqp=CAU'
+    },
+    {
+      username: 'WILSON!!!!',
+      name : "Wilson",
+      avatar_url:
+      'https://stadia-sports.co.uk/wp-content/uploads/2022/12/Wilson-Mr-Wilson-Cast-Away-Volleyball.jpeg'
+    },
 ];
 
