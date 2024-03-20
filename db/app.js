@@ -2,7 +2,17 @@ const express = require("express");
 const app = express();
 const { getTopics } = require("../controllers/topics.controller");
 const { getAllData } = require("../controllers/api.controller");
-const { getArticles, getOrderedArticles } = require("../controllers/articles.controller");
+const { getArticles, getOrderedArticles, getArticleComments } = require("../controllers/articles.controller");
+const { getPlanetNames } = require("../controllers/planetNames.controller");
+const { getStars } = require("../controllers/stars.controller");
+const { getAstronomyInfo } = require("../controllers/astronomyInfo.controller");
+const { getBlackHoles } = require("../controllers/blackHoles.controller");
+const { getGalaxies } = require("../controllers/galaxies.controller");
+const { getPlanets } = require("../controllers/planets.controller");
+const { getMoons } = require("../controllers/moons.controller");
+
+
+
 const cors = require("cors");
 
 app.use(cors());
@@ -15,6 +25,23 @@ app.get("/api", getAllData); // gets all the data
 app.get("/api/articles/:article_id", getArticles); // gets the articles by id
 
 app.get('/api/articles', getOrderedArticles) // gets articles in an ordered format 
+
+app.get('/api/articles/:article_id/comments', getArticleComments); // gets comments by article_id
+
+app.get('/api/planet_names', getPlanetNames); // get the planet names
+
+app.get('/api/stars', getStars) // get the stars
+
+app.get('/api/astronomy_info', getAstronomyInfo) // get astronomy data 
+
+app.get('/api/black_holes', getBlackHoles) // get black hole data
+
+app.get('/api/galaxies', getGalaxies) // get galaxy data
+
+app.get('/api/planets', getPlanets) // get planet data 
+
+app.get('/api/moons', getMoons) // get moon data
+
 
 app.all("*", (req, res) => {
   res.status(404).send({ Status: 404, msg: "endpoint not found" });

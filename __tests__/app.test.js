@@ -51,7 +51,7 @@ describe("app", () => {
           });
         });
     });
-    test(`GET / request should return error status code 404 with a message 'endpoint not found'`, () => {
+    test(`GET / request should return error status code 404 with a message 'endpoint not found' for invalid endpoint requests.`, () => {
       return request(app)
         .get("/api/noTopics")
         .expect(404)
@@ -62,8 +62,253 @@ describe("app", () => {
   });
 });
 
+
+// api/planetNames
+
 describe("app", () => {
-  describe("/api/articles", () => {
+  describe("/api/planet_names", () => {
+    test("GET /planet_names should return an array of objects with a status code of 200", () => {
+      return request(app)
+        .get("/api/planet_names")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.planetNames.length).toBe(8);
+          res.body.planetNames.forEach((planetName) => {
+            expect(typeof planetName).toBe("object");
+            expect(typeof planetName.name).toBe("string");
+            expect(typeof planetName.order_from_sun).toBe("number");
+            if (planetName.order_from_sun === 1)
+              expect(planetName.name).toBe("Mercury");
+            if (planetName.order_from_sun === 2)
+              expect(planetName.name).toBe("Venus");
+            if (planetName.order_from_sun === 3)
+              expect(planetName.name).toBe("Earth");
+            if (planetName.order_from_sun === 4)
+              expect(planetName.name).toBe("Mars");
+            if (planetName.order_from_sun === 5)
+              expect(planetName.name).toBe("Jupiter");
+            if (planetName.order_from_sun === 6)
+              expect(planetName.name).toBe("Saturn");
+            if (planetName.order_from_sun === 7)
+              expect(planetName.name).toBe("Uranus");
+            if (planetName.order_from_sun === 8)
+              expect(planetName.name).toBe("Neptune");
+          });
+        });
+    });
+    test(`GET / request should return error status code 404 with a message 'endpoint not found' for invalid endpoint requests.`, () => {
+      return request(app)
+        .get("/api/planet_nameLess")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+  });
+});
+
+// api/stars
+
+describe("app", () => {
+  describe("/api/stars", () => {
+    test("GET /stars should return an array of objects for each star in the database and a status code of 200.", () => {
+      return request(app)
+        .get("/api/stars")
+        .expect(200)
+        .then((res) => {
+          res.body.stars.forEach((star) => {
+            expect(typeof star.stars_id).toBe('number')
+            expect(typeof star.name).toBe('string')
+            expect(typeof star.type).toBe('string')
+            expect(typeof star.mass).toBe('string')
+            expect(typeof star.radius).toBe('string')
+            expect(typeof star.temperature).toBe('string')
+            expect(typeof star.luminosity).toBe('string')
+            expect(typeof star.age).toBe('string')
+            expect(typeof star.description).toBe('string')
+            expect(typeof star.size_comparison).toBe('string')
+            expect(typeof star.img_url).toBe('string')
+          });
+        });
+    });
+    test(`GET / request should return error status code 404 with a message 'endpoint not found' for invalid endpoint requests.`, () => {
+      return request(app)
+        .get("/api/starss")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+  });
+});
+
+// api/astronomy_info
+
+describe("app", () => {
+  describe("/api/astronomy_info", () => {
+    test("GET /astronomy_info should return an array of objects for each topic in the database and a status code of 200.", () => {
+      return request(app)
+        .get("/api/astronomy_info")
+        .expect(200)
+        .then((res) => {
+          res.body.astronomy.forEach((item) => {
+            expect(typeof item.astronomy_info_id).toBe("number")
+            expect(typeof item.topic).toBe("string")
+            expect(typeof item.description).toBe("string")
+            expect(typeof item.img_url).toBe("string")
+          });
+        });
+    });
+  })
+})
+
+describe("app", () => {
+  describe("/api/black_holes", () => {
+    test("GET /black_holes should return an array of objects for each black hole in the database and a status code of 200.", () => {
+      return request(app)
+        .get("/api/black_holes")
+        .expect(200)
+        .then((res) => {
+          res.body.blackHoles.forEach((item) => {
+            expect(typeof item.black_hole_id).toBe("number")
+            expect(typeof item.name).toBe("string")
+            expect(typeof item.type).toBe("string")
+            expect(typeof item.mass).toBe("string")
+            expect(typeof item.distance).toBe("string")
+            expect(typeof item.description).toBe("string")
+          });
+        });
+    });
+  })
+})
+
+describe("app", () => {
+  describe("/api/galaxies", () => {
+    test("GET /galaxies should return an array of objects for each galaxy in the database and a status code of 200.", () => {
+      return request(app)
+        .get("/api/galaxies")
+        .expect(200)
+        .then((res) => {
+          res.body.galaxy.forEach((galaxy) => {
+            expect(typeof galaxy.galaxy_id).toBe("number")
+            expect(typeof galaxy.galaxy_name).toBe("string")
+            expect(typeof galaxy.type).toBe("string")
+            expect(typeof galaxy.size).toBe("string")
+            expect(typeof galaxy.distance_from_earth).toBe("string")
+            expect(typeof galaxy.number_of_stars).toBe("string")
+            expect(typeof galaxy.visible_galactic_center).toBe("boolean")
+            expect(typeof galaxy.constellation).toBe("string")
+            expect(typeof galaxy.img_url).toBe("string")
+            expect(typeof galaxy.general_info).toBe("string")
+          });
+        });
+    });
+  })
+})
+
+
+describe("app", () => {
+  describe("/api/planets", () => {
+    test("GET /planets should return an array of objects for each planets in the solar System and a status code of 200.", () => {
+      return request(app)
+        .get("/api/planets")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.planet.length).toBe(8)
+          res.body.planet.forEach((planet) => {
+            expect(typeof planet.planets_id).toBe("number")
+            expect(typeof planet.name).toBe("string")
+            expect(typeof planet.average_temp).toBe("number")
+            expect(typeof planet.highest_recorded_temp).toBe("string")
+            expect(typeof planet.lowest_recorded_temp).toBe("string")
+            expect(typeof planet.planet_type).toBe("string")
+            expect(typeof planet.density).toBe("number")
+            expect(typeof planet.dimension).toBe("string")
+            expect(typeof planet.distance_from_sun).toBe("number")
+            expect(typeof planet.gravity).toBe("number")
+            expect(typeof planet.mass_value).toBe("number")
+            expect(typeof planet.number_of_moons).toBe("number")
+            expect(typeof planet.orbital_period_years).toBe("number")
+            expect(typeof planet.mass_exponent).toBe("number")
+            expect(typeof planet.mean_radius).toBe("number")
+            expect(typeof planet.img_url).toBe("string")
+            expect(typeof planet.planet_description).toBe("string")
+          });
+        });
+    });
+  })
+})
+
+
+describe("app", () => {
+  describe("/api/black_holes", () => {
+    test("GET /black_holes should return an array of objects for each black hole in the database and a status code of 200.", () => {
+      return request(app)
+        .get("/api/black_holes")
+        .expect(200)
+        .then((res) => {
+          res.body.blackHoles.forEach((item) => {
+            expect(typeof item.black_hole_id).toBe("number")
+            expect(typeof item.name).toBe("string")
+            expect(typeof item.type).toBe("string")
+            expect(typeof item.mass).toBe("string")
+            expect(typeof item.distance).toBe("string")
+            expect(typeof item.description).toBe("string")
+          });
+        });
+    });
+  })
+})
+
+describe("app", () => {
+  describe("/api/galaxies", () => {
+    test("GET /galaxies should return an array of objects for each galaxy in the database and a status code of 200.", () => {
+      return request(app)
+        .get("/api/galaxies")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.galaxy.length > 0).toBe(true)
+          res.body.galaxy.forEach((galaxy) => {
+            expect(typeof galaxy.galaxy_id).toBe("number")
+            expect(typeof galaxy.galaxy_name).toBe("string")
+            expect(typeof galaxy.type).toBe("string")
+            expect(typeof galaxy.size).toBe("string")
+            expect(typeof galaxy.distance_from_earth).toBe("string")
+            expect(typeof galaxy.number_of_stars).toBe("string")
+            expect(typeof galaxy.visible_galactic_center).toBe("boolean")
+            expect(typeof galaxy.constellation).toBe("string")
+            expect(typeof galaxy.img_url).toBe("string")
+            expect(typeof galaxy.general_info).toBe("string")
+          });
+        });
+    });
+  })
+})
+describe("app", () => {
+  describe("/api/moons", () => {
+    test("GET /moons should return an array of objects for each planets in the solar System and a status code of 200.", () => {
+      return request(app)
+        .get("/api/moons")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.moon.length > 0).toBe(true)
+          res.body.moon.forEach((moon) => {
+            expect(typeof moon.moons_id).toBe("number")
+            expect(typeof moon.orbits).toBe('string')
+            expect(typeof moon.moon_name).toBe("string")
+            expect(typeof moon.distance_from_planet).toBe('string')
+            expect(typeof moon.gravity).toBe('string')
+            expect(typeof moon.mass_value).toBe('string')
+            expect(typeof moon.mass_exponent).toBe('string')
+            expect(typeof moon.mean_radius).toBe('string')
+          });
+        });
+    });
+  })
+})
+
+describe("app", () => {
+  describe("/api/articles:article_id", () => {
     test("GET /articles should return the single requested article object and status code 200", () => {
       return request(app)
         .get("/api/articles/1")
@@ -164,7 +409,91 @@ describe("app", () => {
           expect(res.body.msg).toBe("endpoint not found");
         });
     });
-  })
-})
+  });
+});
 
+// api/article/:article_id/comments
 
+describe("app", () => {
+  describe("/api/articles/:article_id/comments", () => {
+    test("Get /Check server responds with an array of comments and a status code of 200. Ensure each property is present.", () => {
+      return request(app)
+        .get("/api/articles/1/comments")
+        .expect(200)
+        .then((res) => {
+          expect(Array.isArray(res.body.comments)).toBe(true);
+          expect(res.body.comments.length > 0).toBe(true);
+          res.body.comments.forEach((comment) => {
+            expect(comment.article_id).toBe(1);
+            expect(typeof comment.comment_id).toBe("number");
+            expect(typeof comment.body).toBe("string");
+            expect(typeof comment.created_at).toBe("string");
+            expect(typeof comment.author).toBe("string");
+            expect(typeof comment.votes).toBe("number");
+          });
+        });
+    });
+    test("GET / Check server responds with an array of comments for the requested article", () => {
+      return request(app)
+        .get("/api/articles/3/comments")
+        .expect(200)
+        .then((res) => {
+          expect(Array.isArray(res.body.comments)).toBe(true);
+          expect(res.body.comments.length > 0).toBe(true);
+          res.body.comments.forEach((comment) => {
+            expect(comment.article_id).toBe(3);
+          });
+        });
+    });
+    test("GET / Check comments are ordered with the most recent first. Status code 200", () => {
+      return request(app)
+        .get("/api/articles/1/comments")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.comments).toBeSortedBy("created_at", {
+            descending: true,
+          });
+          expect(res.body.comments).not.toBeSortedBy("invalid_key", {
+            descending: true,
+          });
+          expect(res.body.comments).not.toBeSortedBy("created_at", {
+            ascending: true,
+          });
+        });
+    });
+    test("GET / Check comments are ordered with the most recent first. Status code 200", () => {
+      return request(app)
+        .get("/api/articles/2/comments")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.comments).toBeSortedBy("created_at", {
+            descending: true,
+          });
+          expect(res.body.comments).not.toBeSortedBy("invalid_key", {
+            descending: true,
+          });
+          expect(res.body.comments).not.toBeSortedBy("created_at", {
+            ascending: true,
+          });
+        });
+    });
+    test("GET / Check the server responds with a status code of 404 when given an article_id that does not yet exist.", () => {
+      return request(app)
+        .get("/api/articles/999999999/comments")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("article does not exist");
+        });
+    });
+    test("GET / Check the server responds with a status code of 400 when for invalid requests.", () => {
+      return request(app)
+        .get("/api/articles/three/comments")
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
+    });
+  });
+});
+
+// post / api/articles/:article_id/comments

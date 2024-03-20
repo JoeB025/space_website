@@ -61,3 +61,18 @@ exports.selectOrderedArticles = (sort_by = 'created_at', order = 'desc', topic =
         return result.rows
     })
 }
+
+
+
+
+exports.selectArticleComments = (article_id, sort_by = 'created_at', order = 'desc') => {
+  let query =`
+  SELECT *
+  FROM comments
+  WHERE article_id=$1
+  ORDER BY ${sort_by} ${order};
+  `
+  return db.query(query, [article_id]).then((res) => {
+    return res.rows
+  })
+}
