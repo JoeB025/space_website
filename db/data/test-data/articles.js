@@ -1,5 +1,5 @@
 module.exports = [
-
+  
   { 
     topic: 'Dwarf Planet',
     title: 'Weird white dwarf star has a metal scar after eating a planet',
@@ -12,7 +12,7 @@ module.exports = [
     like that and we just weren’t asking the right questions,” says Farihi. “This is the first one, but it's probably 
     not the last.” In fact, the researchers have already found two white dwarfs that appear to have similar scars. 
     Going back to make repeat observations of similar stars could unearth even more.`,
-    votes: 0,
+    votes: 20,
     article_img_url: 'https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_22/1254611/151007-pluto-mn-1525.jpg',
     created_at: 1602370920000
   },
@@ -60,5 +60,14 @@ module.exports = [
     votes: 0,
     article_img_url: 'https://c02.purpledshub.com/uploads/sites/48/2023/03/GettyImages-1329886746-Converted-9b412b9.jpg',
     created_at: 1602370990000
-  }
+  },
+  {
+    topic: 'Testing',
+    title: 'Testing The Title',
+    author: 'TheCreator',
+    body: 'This is a test article',
+    created_at: 1590103130000,
+    votes: 5,
+    article_img_url: 'https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?w=700&h=700'
+  },
 ];

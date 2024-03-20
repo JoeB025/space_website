@@ -191,5 +191,46 @@ module.exports = [
       avatar_url:
       'https://stadia-sports.co.uk/wp-content/uploads/2022/12/Wilson-Mr-Wilson-Cast-Away-Volleyball.jpeg'
     },
+    {
+      username: "Yabba-Dabba-D00",
+      name : "Fred Flintstone",
+      avatar_url:
+      'https://upload.wikimedia.org/wikipedia/en/a/ad/Fred_Flintstone.png'
+    },
+    {
+      username: "RubbleMaster",
+      name : "Barney Rubble",
+      avatar_url:
+      'https://upload.wikimedia.org/wikipedia/en/e/e2/Barney_Rubble.png'
+    },
+    {
+      username: "I-Am-Iron-Man",
+      name : "Iron Man",
+      avatar_url:
+      'https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg/revision/latest/scale-to-width-down/1200?cb=20190629185509'
+    },
+    {
+      username: "Wasp",
+      name : "Hope van Dyne",
+      avatar_url:
+      'https://www.gamersheek.co.uk/images/ant-man-the-wasp-quantumania-movie-masterpiece-1-6-scale-the-wasp-p18832-82235_image.jpg'
+    },
+    {
+      username: "AntMan",
+      name : "Scott Lang",
+      avatar_url:
+      'https://upload.wikimedia.org/wikipedia/commons/7/76/Ant_man%28Scott_Lang%29.jpg'
+    },
+    {
+      username: "BirdMuncher5000",
+      name : "Paul",
+      avatar_url:
+      "https://static.wikia.nocookie.net/alienfilm/images/b/bf/Paul_seperate_from_BG/revision/latest/scale-to-width-down/220?cb=20130828021019"
+    },
+    {
+      username: "E.T.",
+      name : "Extra Terrestrial",
+      avatar_url:
+      "https://static.wikia.nocookie.net/p__/images/b/b0/ET_full.jpg/revision/latest?cb=20190916195452&path-prefix=protagonist"
+    },
 ];
-

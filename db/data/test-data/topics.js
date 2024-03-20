@@ -5,4 +5,5 @@ module.exports = [
   { description: 'Black holes are terrifying!', slug: 'Black holes' },
   { description: 'Can those big white things in the night sky explode?', slug: 'Supernova' },
   { description: 'Why is Pluto a Dwarf Planet now?', slug: 'Dwarf Planet' },
+  { description: 'This is a test description', slug: 'Testing' },
 ];

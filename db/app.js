@@ -10,8 +10,8 @@ const { getBlackHoles } = require("../controllers/blackHoles.controller");
 const { getGalaxies } = require("../controllers/galaxies.controller");
 const { getPlanets } = require("../controllers/planets.controller");
 const { getMoons } = require("../controllers/moons.controller");
-
-
+const { deleteComments } = require("../controllers/comments.controller");
+const { getUsers } = require("../controllers/users.controller");
 
 const cors = require("cors");
 
@@ -42,9 +42,13 @@ app.get('/api/planets', getPlanets) // get planet data
 
 app.get('/api/moons', getMoons) // get moon data
 
+app.get('/api/users', getUsers) // get user data
+
 app.post('/api/articles/:article_id/comments', insertComments) // insert article comments
 
 app.patch('/api/articles/:article_id', patchVotes) // update the votes on articles 
+
+app.delete('/api/comments/:comment_id', deleteComments) // delete comments on articles
 
 
 

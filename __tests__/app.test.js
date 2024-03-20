@@ -41,7 +41,7 @@ describe("app", () => {
         .get("/api/topics")
         .expect(200)
         .then((res) => {
-          expect(res.body.topics.length).toBe(6);
+          expect(res.body.topics.length).toBe(7);
           res.body.topics.forEach((topic) => {
             const objectKeys = Object.keys(topic);
             expect(objectKeys.includes("slug")).toBe(true);
@@ -304,6 +304,35 @@ describe("app", () => {
   });
 });
 
+// get/api/users
+
+describe("app", () => {
+  describe("GET /api/users", () => {
+    test("GET /users should return an array of each user object and a status code of 200", () => {
+      return request(app)
+        .get("/api/users")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.users.length > 0).toBe(true);
+          expect(res.body.users.length).toBe(15);
+          res.body.users.forEach((user) => {
+            expect(typeof user.username).toBe("string");
+            expect(typeof user.name).toBe("string");
+            expect(typeof user.avatar_url).toBe("string");
+          });
+        });
+    });
+    test(`GET /request should return an error status code of 404 with the message 'endpoint not found' when given an invalid endpoint`, () => {
+      return request(app)
+        .get("/api/noUsers")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+  });
+});
+
 describe("app", () => {
   describe("/api/articles:article_id", () => {
     test("GET /articles should return the single requested article object and status code 200", () => {
@@ -532,7 +561,7 @@ describe("app", () => {
     });
     test("POST:404 responds with an appropriate status and error message when making a post to an article that does not yet exist (article has not yet been created)", () => {
       return request(app)
-        .post("/api/articles/7/comments")
+        .post("/api/articles/8/comments")
         .send({
           body: "this is the body",
           username: "KingKakarot",
@@ -580,14 +609,6 @@ describe("app", () => {
   });
 });
 
-
-
-
-
-
-
-
-
 // patch votes
 
 describe("app", () => {
@@ -595,8 +616,128 @@ describe("app", () => {
     test("Check status code returns 200 for valid patch requests", () => {
       return request(app)
         .patch("/api/articles/1")
-        .send({ inc_votes: +1 })
+        .send({ inc_votes: -1 })
         .expect(200);
+    });
+    test("Check votes decrease by one and returns an object containing correct information", () => {
+      return request(app)
+        .patch("/api/articles/7")
+        .send({ inc_votes: -1 })
+        .expect(200)
+        .then((res) => {
+          expect(res.body.article).toMatchObject({
+            article_id: 7,
+            title: "Testing The Title",
+            topic: "Testing",
+            author: "TheCreator",
+            body: "This is a test article",
+            votes: 4,
+            article_img_url:
+              "https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?w=700&h=700",
+          });
+          expect(res.body.article.hasOwnProperty("article_id")).toBe(true);
+          expect(typeof res.body.article.article_id).toBe("number");
+          expect(typeof res.body.article.title).toBe("string");
+          expect(typeof res.body.article.topic).toBe("string");
+          expect(typeof res.body.article.author).toBe("string");
+          expect(typeof res.body.article.body).toBe("string");
+          expect(typeof res.body.article.votes).toBe("number");
+          expect(typeof res.body.article.article_img_url).toBe("string");
+        });
+    });
+    test("Check increment works for a different number", () => {
+      return request(app)
+        .patch("/api/articles/1")
+        .send({ inc_votes: +25 })
+        .expect(200)
+        .then((res) => {
+          expect(res.body.article.votes).toBe(45);
+        });
+    });
+    test("Check error 404 is returned for incorrect endpoint", () => {
+      return request(app)
+        .patch("/api/no_articles/1")
+        .send({ inc_votes: +1 })
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+    test("Check error 404 for requests that could be valid but are yet to exist", () => {
+      return request(app)
+        .patch("/api/articles/9999999")
+        .send({ inc_votes: +5 })
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("article does not exist");
+        });
+    });
+    test("Check error 400 when passed a string of letters as an incrementor", () => {
+      return request(app)
+        .patch("/api/articles/1")
+        .send({ inc_votes: "four" })
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
+    });
+    test("Check error 400 when passed in an invalid incrementor", () => {
+      return request(app)
+        .patch("/api/articles/1")
+        .send({ inc_votes: false })
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
+    });
+    test("Check error 400 when given incorrect object key", () => {
+      return request(app)
+        .patch("/api/articles/1")
+        .send({ increaseMyVoteCount: -1 })
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
+    });
+  });
+});
+
+describe("app", () => {
+  describe("/api/comments/:comment_id", () => {
+    test("Check status code returns 204 for valid delete requests", () => {
+      return request(app).delete("/api/comments/1").expect(204);
+    });
+    test("Check returned object is empty", () => {
+      return request(app)
+        .delete("/api/comments/1")
+        .expect(204)
+        .then((res) => {
+          expect(res.body).toEqual({});
+        });
+    });
+    test("Check error 404 for valid requests that do not yet exist", () => {
+      return request(app)
+        .delete("/api/comments/99999")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("article does not exist");
+        });
+    });
+    test("Check for error code 404 for endpoints that do not exist", () => {
+      return request(app)
+        .delete("/api/no-comments/1")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+    test("Check for error code 400 for invalid endpoints", () => {
+      return request(app)
+        .delete("/api/comments/five")
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
     });
   });
 });
