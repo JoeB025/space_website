@@ -604,5 +604,62 @@ module.exports = [
     author: "happyamy2016",
     article_id: 2,
     created_at: 1594890960000
+  },
+  {
+    body: "Supernovae are like the cosmic fireworks of the universe, illuminating the darkness with their spectacular explosions.",
+    votes: 5,
+    author: "KingOfTheNorth",
+    article_id: 6,
+    created_at: 1594890120000
+  },
+  {
+    body: "Indeed! Supernovae are the celestial giants, casting their brilliance across the vast expanse of space.",
+    votes: 7,
+    author: "I-AM-THE-KING",
+    article_id: 6,
+    created_at: 1594890240000
+  },
+  {
+    body: "I've always been intrigued by supernovae. They're like the cosmic phoenixes, rising from the ashes of stellar demise.",
+    votes: 3,
+    author: "MrDarkKnight",
+    article_id: 6,
+    created_at: 1594890360000
+  },
+  {
+    body: "Absolutely! Supernovae are the cosmic storytellers, revealing the secrets of stellar evolution and death.",
+    votes: 4,
+    author: "MadamKitty",
+    article_id: 6,
+    created_at: 1594890480000
+  },
+  {
+    body: "The study of supernovae is like exploring the cosmic mysteries, where each explosion unveils new insights into the nature of the universe.",
+    votes: 2,
+    author: "TheGreatestActor",
+    article_id: 6,
+    created_at: 1594890600000
+  },
+  {
+    body: "Supernovae are like the celestial symphonies, echoing through space and time with their powerful crescendos.",
+    votes: 6,
+    author: "TheProtector",
+    article_id: 6,
+    created_at: 1594890720000
+  },
+  {
+    body: "Exploring supernovae allows us to witness the cosmic dance of life and death on a grand scale, reminding us of the fleeting nature of existence.",
+    votes: 4,
+    author: "Ser_BlackWater_Bronn",
+    article_id: 6,
+    created_at: 1594890840000
+  },
+  {
+    body: "The study of supernovae is a testament to the beauty and complexity of the universe, inspiring awe and wonder in all who contemplate them.",
+    votes: 3,
+    author: "happyamy2016",
+    article_id: 6,
+    created_at: 1594890960000
   }
+  
 ]

@@ -70,4 +70,50 @@ module.exports = [
     votes: 5,
     article_img_url: 'https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?w=700&h=700'
   },
+  {
+    topic: 'Supernova',
+    title: 'Known Supernova Explosions',
+    author: "TheCreator",
+    body: "Supernovae have left their mark across the cosmos, with several notable explosions captured by astronomers throughout history. One famous example is SN 1987A, which occurred in the Large Magellanic Cloud, a satellite galaxy of the Milky Way. This event marked the first time that neutrinos from a supernova were detected on Earth, providing valuable insights into the inner workings of these cosmic cataclysms. Another well-known supernova is SN 1054, which resulted in the formation of the Crab Nebula. This remnant of a stellar explosion has been studied extensively across multiple wavelengths, revealing the complex interactions between the expanding shockwave and surrounding interstellar material. Additionally, the Kepler supernova, observed by Johannes Kepler in 1604, remains one of the most extensively studied supernovae in history. These and many other supernova explosions continue to captivate astronomers and shed light on the dynamics of stellar evolution and the evolution of galaxies.",
+    votes: 0,
+    article_img_url: 'https://c02.purpledshub.com/uploads/sites/48/2023/03/GettyImages-1329886746-Converted-9b412b9.jpg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Supernova',
+    title: 'Supernova SN 2011fe',
+    author: "tickle122",
+    body: "One of the most significant supernovae in recent years is SN 2011fe, which occurred in the nearby galaxy M101, also known as the Pinwheel Galaxy. Discovered on August 24, 2011, by amateur astronomers, SN 2011fe quickly became the focus of intense scientific scrutiny due to its proximity and early detection. This Type Ia supernova provided astronomers with a rare opportunity to study the early stages of these explosions and refine models for understanding their underlying physics. Observations of SN 2011fe revealed important insights into the progenitor system, shedding light on the nature of white dwarf stars and the mechanisms leading to thermonuclear explosions. The proximity of SN 2011fe also allowed for detailed follow-up observations across multiple wavelengths, providing a wealth of data for astronomers to analyze and refine their understanding of supernova physics. The study of SN 2011fe continues to yield valuable insights into the role of Type Ia supernovae in cosmic evolution and their use as standard candles for measuring the expansion rate of the universe.",
+    votes: 0,
+    article_img_url: 'https://c02.purpledshub.com/uploads/sites/48/2023/03/GettyImages-1329886746-Converted-9b412b9.jpg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Planet',
+    title: 'Jupiter: The Giant of the Solar System',
+    author: "tickle122",
+    body: "Jupiter, the largest planet in our solar system, commands attention with its immense size and dynamic atmosphere. Named after the king of the Roman gods, Jupiter boasts a mesmerizing array of features, including its iconic Great Red Spot, a massive storm larger than Earth that has raged for centuries. Beyond its captivating appearance, Jupiter plays a crucial role in shaping the architecture of the solar system. Its gravitational influence helps to shepherd asteroids and comets, protecting the inner planets from potential impacts. Additionally, Jupiter's moons, such as Europa, Ganymede, and Io, offer tantalizing targets for future exploration, with evidence suggesting the presence of subsurface oceans and volcanic activity. While Jupiter's extreme environment presents challenges for human exploration, robotic missions like NASA's Juno spacecraft continue to unlock the secrets of this gas giant, providing valuable insights into its composition, structure, and role in the cosmic drama of our solar system.",
+    votes: 0,
+    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Planet',
+    title: 'The Enigmatic World of Proxima Centauri b',
+    author: "KingKakarot",
+    body: "Proxima Centauri b, the closest known exoplanet to Earth, orbits its parent star Proxima Centauri in the habitable zone. This rocky exoplanet, discovered in 2016, has captivated the imagination of astronomers and space enthusiasts due to its potential for harboring life. Despite being only 4.24 light-years away from our solar system, the nature of Proxima Centauri b remains shrouded in mystery. Its proximity to its parent star raises questions about its atmospheric composition, surface conditions, and potential for habitability. Some studies suggest that Proxima Centauri b may experience tidal locking, with one side permanently facing its star, leading to extreme temperature variations between its day and night sides. Despite these challenges, Proxima Centauri b represents an exciting target for future exoplanet research and could provide valuable insights into the prevalence of habitable worlds in our galactic neighborhood.",
+    votes: 0,
+    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Planet',
+    title: 'Mars: The Red Planets Habitability',
+    author: "happyamy2016",
+    body: "Mars, often referred to as the Red Planet, has long fascinated scientists and space enthusiasts alike with its potential for habitability. While Mars' harsh surface conditions, including extreme cold, thin atmosphere, and lack of liquid water, make it inhospitable to life as we know it today, evidence suggests that Mars may have been more habitable in the past. Geological features such as ancient river valleys, lakebeds, and minerals formed in the presence of water hint at a warmer and wetter climate billions of years ago. Moreover, recent discoveries of subsurface ice deposits and seasonal briny water flows suggest that liquid water may still exist on Mars, albeit transiently and underground. These findings raise tantalizing questions about the possibility of past or present microbial life on Mars and the potential for human colonization in the future. While Mars' habitability remains an active area of research, ongoing missions such as NASA's Perseverance rover and the ESA's ExoMars program continue to investigate Mars' past and present environments, paving the way for future exploration and discovery.",
+    votes: 0,
+    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    created_at: 1602370980000
+  },
+  
 ];

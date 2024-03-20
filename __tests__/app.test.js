@@ -561,7 +561,7 @@ describe("app", () => {
     });
     test("POST:404 responds with an appropriate status and error message when making a post to an article that does not yet exist (article has not yet been created)", () => {
       return request(app)
-        .post("/api/articles/8/comments")
+        .post("/api/articles/8000/comments")
         .send({
           body: "this is the body",
           username: "KingKakarot",
@@ -741,3 +741,92 @@ describe("app", () => {
     });
   });
 });
+
+describe("app", () => {
+  describe("/api/articles", () => {
+    test("GET / request should only get articles with the topic of Supernova", () => {
+      return request(app)
+        .get("/api/articles?topic=Supernova")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.article.length).toBe(3);
+          res.body.article.forEach((article) => {
+            expect(article.topic).toBe("Supernova");
+            expect(article.topic).not.toBe("Astronomy");
+            expect(article.topic).not.toBe("Testing");
+          });
+        });
+    });
+    test("GET / request should only get articles with the topic of Astronomy", () => {
+      return request(app)
+        .get("/api/articles?topic=Astronomy")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.article.length).toBe(1);
+          res.body.article.forEach((article) => {
+            expect(article.topic).toBe("Astronomy");
+            expect(article.topic).not.toBe("Supernova");
+            expect(article.topic).not.toBe("Testing");
+          });
+        });
+    });
+    test("GET / request should only get articles with the topic of Planet", () => {
+      return request(app)
+        .get("/api/articles?topic=Planet")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.article.length).toBe(4);
+          res.body.article.forEach((article) => {
+            expect(article.topic).toBe("Planet");
+            expect(article.topic).not.toBe("Astronomy");
+            expect(article.topic).not.toBe("Black holes");
+          });
+        });
+    });
+
+    test("GET / request should all articles when no topic is specified", () => {
+      return request(app)
+        .get("/api/articles")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.article.length).toBe(12);
+          res.body.article.forEach((article) => {
+            expect(
+              article.topic === "Planet" ||
+                article.topic === "Astronomy" ||
+                article.topic === "Supernova" ||
+                article.topic === "Black holes" ||
+                article.topic === "Testing" ||
+                article.topic === "Moons" ||
+                article.topic === "Dwarf Planet"
+            ).toBe(true);
+          });
+        });
+    });
+    test("GET / request should return a 400 for an invalid topic", () => {
+      return request(app)
+        .get("/api/articles?topic=food")
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Not a valid topic!");
+        });
+    });
+    test("GET / request should return a 404 for an invalid request", () => {
+      return request(app)
+        .get("/api/bananas?topic=Supernova")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+  });
+});
+
+
+
+
+// add comment count to articles/articles_id 
+
+
+
+

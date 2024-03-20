@@ -165,7 +165,131 @@ module.exports = [
     votes: 0,
     article_img_url: 'https://cdn.mos.cms.futurecdn.net/7kCUkCxg6mAD2CXZ9kdKRa.jpg',
     created_at: 1647273600000
+  },
+  {
+    topic: 'Supernova',
+    title: 'Known Supernova Explosions',
+    author: "MadamKitty",
+    body: "Supernovae have left their mark across the cosmos, with several notable explosions captured by astronomers throughout history. One famous example is SN 1987A, which occurred in the Large Magellanic Cloud, a satellite galaxy of the Milky Way. This event marked the first time that neutrinos from a supernova were detected on Earth, providing valuable insights into the inner workings of these cosmic cataclysms. Another well-known supernova is SN 1054, which resulted in the formation of the Crab Nebula. This remnant of a stellar explosion has been studied extensively across multiple wavelengths, revealing the complex interactions between the expanding shockwave and surrounding interstellar material. Additionally, the Kepler supernova, observed by Johannes Kepler in 1604, remains one of the most extensively studied supernovae in history. These and many other supernova explosions continue to captivate astronomers and shed light on the dynamics of stellar evolution and the evolution of galaxies.",
+    votes: 0,
+    article_img_url: 'https://c02.purpledshub.com/uploads/sites/48/2023/03/GettyImages-1329886746-Converted-9b412b9.jpg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Supernova',
+    title: 'Supernova SN 2011fe',
+    author: "Ser_BlackWater_Bronn",
+    body: "One of the most significant supernovae in recent years is SN 2011fe, which occurred in the nearby galaxy M101, also known as the Pinwheel Galaxy. Discovered on August 24, 2011, by amateur astronomers, SN 2011fe quickly became the focus of intense scientific scrutiny due to its proximity and early detection. This Type Ia supernova provided astronomers with a rare opportunity to study the early stages of these explosions and refine models for understanding their underlying physics. Observations of SN 2011fe revealed important insights into the progenitor system, shedding light on the nature of white dwarf stars and the mechanisms leading to thermonuclear explosions. The proximity of SN 2011fe also allowed for detailed follow-up observations across multiple wavelengths, providing a wealth of data for astronomers to analyze and refine their understanding of supernova physics. The study of SN 2011fe continues to yield valuable insights into the role of Type Ia supernovae in cosmic evolution and their use as standard candles for measuring the expansion rate of the universe.",
+    votes: 0,
+    article_img_url: 'https://c02.purpledshub.com/uploads/sites/48/2023/03/GettyImages-1329886746-Converted-9b412b9.jpg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Exoplanets',
+    title: 'Kepler-186f: The Earth-Sized Exoplanet',
+    author: "happyamy2016",
+    body: "Kepler-186f stands out among the multitude of exoplanets discovered by the Kepler Space Telescope for its potential Earth-likeness. Located approximately 500 light-years away in the constellation Cygnus, Kepler-186f orbits a red dwarf star within the habitable zone, where liquid water could potentially exist on its surface. This Earth-sized exoplanet has sparked interest among astronomers and astrobiologists alike, as it represents one of the best candidates for hosting life beyond our solar system. Although Kepler-186f receives less sunlight than Earth due to its proximity to its cooler parent star, its location within the habitable zone increases the likelihood of maintaining surface temperatures conducive to liquid water and, potentially, life as we know it. Observations of Kepler-186f and similar exoplanets offer valuable insights into the diversity of planetary systems and the potential for habitability beyond our cosmic neighborhood.",
+    votes: 0,
+    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Planet',
+    title: 'The Enigmatic World of Proxima Centauri b',
+    author: "TheGreatestActor",
+    body: "Proxima Centauri b, the closest known exoplanet to Earth, orbits its parent star Proxima Centauri in the habitable zone. This rocky exoplanet, discovered in 2016, has captivated the imagination of astronomers and space enthusiasts due to its potential for harboring life. Despite being only 4.24 light-years away from our solar system, the nature of Proxima Centauri b remains shrouded in mystery. Its proximity to its parent star raises questions about its atmospheric composition, surface conditions, and potential for habitability. Some studies suggest that Proxima Centauri b may experience tidal locking, with one side permanently facing its star, leading to extreme temperature variations between its day and night sides. Despite these challenges, Proxima Centauri b represents an exciting target for future exoplanet research and could provide valuable insights into the prevalence of habitable worlds in our galactic neighborhood.",
+    votes: 0,
+    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Planet',
+    title: 'Jupiter: The Giant of the Solar System',
+    author: "Ser_BlackWater_Bronn",
+    body: "Jupiter, the largest planet in our solar system, commands attention with its immense size and dynamic atmosphere. Named after the king of the Roman gods, Jupiter boasts a mesmerizing array of features, including its iconic Great Red Spot, a massive storm larger than Earth that has raged for centuries. Beyond its captivating appearance, Jupiter plays a crucial role in shaping the architecture of the solar system. Its gravitational influence helps to shepherd asteroids and comets, protecting the inner planets from potential impacts. Additionally, Jupiter's moons, such as Europa, Ganymede, and Io, offer tantalizing targets for future exploration, with evidence suggesting the presence of subsurface oceans and volcanic activity. While Jupiter's extreme environment presents challenges for human exploration, robotic missions like NASA's Juno spacecraft continue to unlock the secrets of this gas giant, providing valuable insights into its composition, structure, and role in the cosmic drama of our solar system.",
+    votes: 0,
+    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Moons',
+    title: 'Exploring the Giants: Largest Moons in Our Solar System',
+    author: "KingOfTheNorth",
+    body: "The largest moons in our solar system offer a diverse and fascinating array of worlds waiting to be explored. Among them, Jupiter's moon Ganymede stands out as the largest moon in the solar system, boasting a diameter greater than that of the planet Mercury. Ganymede's icy surface conceals a subsurface ocean, making it a prime target for future exploration in search of extraterrestrial life. Saturn's moon Titan, the second-largest moon, is unique in that it has a thick atmosphere and lakes of liquid hydrocarbons on its surface, resembling Earth in some aspects. Europa, another of Jupiter's moons, is slightly smaller but harbors a global subsurface ocean beneath its icy crust, raising intriguing possibilities for habitability. Rounding out the list of giants is Earth's own moon, which, while smaller in size, has played a significant role in shaping our planet's history and culture. These largest moons offer a wealth of opportunities for scientific discovery and exploration, providing insights into the processes of planetary formation and the potential for life beyond Earth.",
+    votes: 0,
+    article_img_url: 'https://media.npr.org/assets/img/2017/10/16/titan-41d62a75c7b7376fe8ff872bb1deec3bc24a4a14-s1100-c50.jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Planet',
+    title: 'Planets with Rings: A Cosmic Jewelry Collection',
+    author: "MrDarkKnight",
+    body: "While Saturn is often celebrated for its majestic ring system, it's not the only planet adorned with cosmic jewelry. Jupiter, the largest planet in our solar system, boasts a faint ring system composed mainly of dust particles. Although less prominent than Saturn's rings, Jupiter's rings are believed to be formed by material ejected from its moons. Uranus and Neptune, the outer ice giants, also possess ring systems, albeit less conspicuous than those of Saturn and Jupiter. Uranus has a narrow set of dark rings, likely composed of rocky debris, while Neptune's rings are faint and dusty, possibly formed by fragments of its moons or material captured from passing objects. Even Mars, the red planet, has a ring system, albeit temporary and tenuous, consisting of dust particles shed by its moons Phobos and Deimos. These planetary rings offer unique insights into the dynamics of celestial bodies and the interactions between planets and their moons, enriching our understanding of the solar system's complex and diverse landscapes.",
+    votes: 0,
+    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Dwarf Planet',
+    title: 'Pluto: The Beloved Dwarf Planet',
+    author: "TheProtector",
+    body: "Pluto, once considered the ninth planet in our solar system, holds a special place in the hearts of space enthusiasts as the beloved dwarf planet. Discovered in 1930 by astronomer Clyde Tombaugh, Pluto captured the imagination of the world until its reclassification as a dwarf planet by the International Astronomical Union in 2006. Despite its diminutive size and distant orbit beyond Neptune, Pluto continues to intrigue scientists and the public alike. Recent missions such as NASA's New Horizons have revealed Pluto's diverse and dynamic surface features, including icy mountains, vast plains, and a thin atmosphere. The discovery of Pluto's large moon Charon, along with four smaller moons, further adds to its allure. While Pluto's status may have changed, its status as an emblem of exploration and discovery remains undiminished, serving as a reminder of the wonders awaiting exploration in the far reaches of our solar system.",
+    votes: 0,
+    article_img_url: 'https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_22/1254611/151007-pluto-mn-1525.jpg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Planet',
+    title: 'Mars: The Red Planets Habitability',
+    author: "happyamy2016",
+    body: "Mars, often referred to as the Red Planet, has long fascinated scientists and space enthusiasts alike with its potential for habitability. While Mars' harsh surface conditions, including extreme cold, thin atmosphere, and lack of liquid water, make it inhospitable to life as we know it today, evidence suggests that Mars may have been more habitable in the past. Geological features such as ancient river valleys, lakebeds, and minerals formed in the presence of water hint at a warmer and wetter climate billions of years ago. Moreover, recent discoveries of subsurface ice deposits and seasonal briny water flows suggest that liquid water may still exist on Mars, albeit transiently and underground. These findings raise tantalizing questions about the possibility of past or present microbial life on Mars and the potential for human colonization in the future. While Mars' habitability remains an active area of research, ongoing missions such as NASA's Perseverance rover and the ESA's ExoMars program continue to investigate Mars' past and present environments, paving the way for future exploration and discovery.",
+    votes: 0,
+    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Aliens',
+    title: 'Alien Life: Exploring the Possibilities',
+    author: "WILSON!!!!",
+    body: "The question of whether alien life exists, either on Earth or within our solar system, is a topic of great debate and speculation among scientists and the public. While there is currently no direct evidence of extraterrestrial life on Earth, some scientists hypothesize that life may have originated elsewhere in the universe and been transported to Earth via meteorites or other means—a theory known as panspermia. However, this idea remains speculative and lacks concrete evidence. As for the possibility of alien life within our solar system, recent discoveries of potential habitable environments on celestial bodies such as Mars, Europa, and Enceladus have fueled excitement about the potential for microbial life beyond Earth. These worlds harbor subsurface oceans or liquid water beneath their icy crusts, raising the possibility of habitable conditions for extremophilic organisms. While the search for extraterrestrial life remains ongoing, it is essential to approach the topic with scientific rigor and skepticism, acknowledging that definitive proof of alien life, if it exists, may still elude us. Nevertheless, the exploration of our solar system and beyond continues to push the boundaries of our understanding and inspire awe and wonder at the possibility of life beyond Earth.",
+    votes: 0,
+    article_img_url: 'https://www.telegraph.co.uk/content/dam/news/2023/06/09/TELEMMGLPICT000338751957_16863205711450_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.jpeg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Galaxies',
+    title: 'The Cosmic Collision: Andromeda and the Milky Way',
+    author: "TheGreatestActor",
+    body: "One of the most anticipated events in the distant future of our galaxy is the collision between the Milky Way and the Andromeda Galaxy, two of the largest galaxies in the Local Group. Current observations suggest that Andromeda (also known as M31) is on a collision course with the Milky Way, with the two galaxies expected to merge in approximately 4.5 billion years. This cosmic collision will reshape the structure of both galaxies, creating a new, larger galaxy dubbed 'Milkomeda' or 'Milkdromeda.' Despite the immense scales involved, such galactic mergers are relatively common in the universe's history, with galaxies frequently interacting and merging due to their mutual gravitational attraction. While the collision will not likely lead to stars physically colliding due to the vast distances between them, it will profoundly affect the distribution of stars and gas within the merged galaxy, triggering intense star formation and potentially leading to the formation of a new supermassive black hole at the center. Despite the cosmic drama of this collision, the event will unfold slowly on astronomical timescales, giving future generations of astronomers and stargazers a front-row seat to witness the dynamic evolution of our cosmic neighborhood.",
+    votes: 0,
+    article_img_url: 'https://cdn.theatlantic.com/thumbor/jijy5XWWdPjBs4etUCymQN5e2iQ=/0x0:2133x1200/1600x900/media/img/mt/2022/08/noirlab2219a/original.jpg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'Galaxies',
+    title: 'Exploring the Diversity of Galaxies',
+    author: "Ser_BlackWater_Bronn",
+    body: "Galaxies, the sprawling collections of stars, gas, and dust that populate the universe, come in a variety of shapes, sizes, and compositions. Astronomers classify galaxies into several main types based on their morphology and characteristics. The three primary classifications are spiral galaxies, elliptical galaxies, and irregular galaxies. Spiral galaxies, such as our Milky Way, are characterized by their distinct spiral arms extending from a central bulge. These arms contain regions of active star formation, giving spiral galaxies their characteristic appearance. Elliptical galaxies, on the other hand, have a more rounded or elliptical shape and lack the spiral structure of their counterparts. They are often composed of older stars and have lower rates of star formation. Irregular galaxies, as the name suggests, lack a regular shape and exhibit a chaotic appearance. They can result from interactions between galaxies or other gravitational disturbances, leading to the disruption of their structure. Beyond these primary classifications, astronomers also recognize other subtypes of galaxies, such as lenticular galaxies (which share characteristics of both spiral and elliptical galaxies) and dwarf galaxies (smaller and less luminous than their larger counterparts). The study of galaxy types and their distribution provides valuable insights into the formation and evolution of cosmic structures, shedding light on the processes that shape the universe on the largest scales.",
+    votes: 0,
+    article_img_url: 'https://hubblesite.org/files/live/sites/hubble/files/home/science/galaxies/_images/STScI-H-galaxies-3types-2400x1200.jpg',
+    created_at: 1602370980000
+  },
+  {
+    topic: 'The Big Bang',
+    title: 'Unraveling the Timeline of the Big Bang',
+    author: "MadamKitty",
+    body: `Understanding the timeline of the Big Bang, the prevailing cosmological model for the universe's origin and evolution, is essential to grasping the fundamental principles that govern our cosmos. 
+    The Big Bang theory posits that the universe began as an infinitely hot and dense point known as a singularity, approximately 13.8 billion years ago. From this singular event, the universe has undergone a series of transformative stages, driven by fundamental forces such as gravity, electromagnetism, and the strong and weak nuclear forces. 
+    In the earliest moments of the Big Bang, the universe experienced a rapid and exponential expansion event known as cosmic inflation. This period of hyper-expansion solved various cosmological puzzles, such as the horizon problem and the flatness problem, while laying the foundation for the large-scale structure of the universe. 
+    As the universe expanded and cooled, elementary particles such as protons, neutrons, and electrons began to form. During the first few minutes after the Big Bang, nuclear fusion processes synthesized light elements like hydrogen, helium, and traces of lithium, laying down the primordial chemical composition of the cosmos. Approximately 380,000 years after the Big Bang, the universe cooled sufficiently for protons and electrons to combine and form neutral hydrogen atoms through a process known as recombination. 
+    This event marked the transition from a hot, opaque plasma to a transparent universe filled with neutral atoms. The release of light from the recombination era left behind a faint glow of radiation permeating throughout space, known as the cosmic microwave background radiation (CMB). Discovered in 1965, the CMB serves as compelling evidence supporting the Big Bang theory, providing a snapshot of the universe's early infancy. Over billions of years, gravitational interactions caused matter to clump together, giving rise to the formation of galaxies, galaxy clusters, and cosmic filaments. 
+    These cosmic structures continue to evolve under the influence of gravity, shaping the large-scale architecture of the universe. The role of gravity in the Big Bang timeline is profound, as it governs the dynamics of cosmic expansion and the formation of structures from the smallest scales to the largest. From the gravitational collapse of primordial gas clouds to the clustering of galaxies along cosmic filaments, gravity shapes the cosmic landscape in ways both subtle and profound, leaving its indelible mark on the fabric of the universe.`,
+    votes: 0,
+    article_img_url: 'https://miro.medium.com/v2/resize:fit:1358/0*ilCvbO8US6Hz-AKN',
+    created_at: 1602370980000
   }
+  
+  
   
   
   

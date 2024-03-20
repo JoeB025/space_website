@@ -9,5 +9,6 @@ module.exports = [
   { description: 'Do Aliens exist and what do we know about them?', slug: "Aliens"},
   { description: 'An amazing Discovery of Earth-like exoplanets', slug: 'Exoplanets'},
   { description: 'The importance of cosmic dust in shaping the cosmos,', slug: 'Cosmic Dust'},
-  { description: 'The fascinating nature of pulsars, their origins, properties, scientific importance, and practical applications in space navigation.', slug: 'Pulsars'}
+  { description: 'The fascinating nature of pulsars, their origins, properties, scientific importance, and practical applications in space navigation.', slug: 'Pulsars'},
+  { description: 'Galaxies Collide', slug: 'Galaxies'}
 ];
