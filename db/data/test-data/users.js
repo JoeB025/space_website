@@ -1,5 +1,11 @@
 module.exports = [
   {
+    username: 'TheCreator',
+    name: 'The Creator',
+    avatar_url:
+      'https'
+  },
+  {
     username: 'tickle122',
     name: 'Tom Tickle',
     avatar_url:

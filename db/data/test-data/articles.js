@@ -1,4 +1,5 @@
 module.exports = [
+
   { 
     topic: 'Dwarf Planet',
     title: 'Weird white dwarf star has a metal scar after eating a planet',

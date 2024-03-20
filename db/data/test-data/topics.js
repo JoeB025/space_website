@@ -4,5 +4,5 @@ module.exports = [
   { description: 'How do they mean when they say a planet is a gas planet?', slug: 'Planet' },
   { description: 'Black holes are terrifying!', slug: 'Black holes' },
   { description: 'Can those big white things in the night sky explode?', slug: 'Supernova' },
-  { description: 'Why is Pluto a Dwarf Planet now?', slug: 'Dwarf Planet' }
+  { description: 'Why is Pluto a Dwarf Planet now?', slug: 'Dwarf Planet' },
 ];

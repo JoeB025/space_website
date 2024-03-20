@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const { getTopics } = require("../controllers/topics.controller");
 const { getAllData } = require("../controllers/api.controller");
-const { getArticles, getOrderedArticles, getArticleComments, insertComments } = require("../controllers/articles.controller");
+const { getArticles, getOrderedArticles, getArticleComments, insertComments, patchVotes } = require("../controllers/articles.controller");
 const { getPlanetNames } = require("../controllers/planetNames.controller");
 const { getStars } = require("../controllers/stars.controller");
 const { getAstronomyInfo } = require("../controllers/astronomyInfo.controller");
@@ -43,6 +43,9 @@ app.get('/api/planets', getPlanets) // get planet data
 app.get('/api/moons', getMoons) // get moon data
 
 app.post('/api/articles/:article_id/comments', insertComments) // insert article comments
+
+app.patch('/api/articles/:article_id', patchVotes) // update the votes on articles 
+
 
 
 app.all("*", (req, res) => {

@@ -579,3 +579,24 @@ describe("app", () => {
     });
   });
 });
+
+
+
+
+
+
+
+
+
+// patch votes
+
+describe("app", () => {
+  describe("/api/articles/:article_id", () => {
+    test("Check status code returns 200 for valid patch requests", () => {
+      return request(app)
+        .patch("/api/articles/1")
+        .send({ inc_votes: +1 })
+        .expect(200);
+    });
+  });
+});

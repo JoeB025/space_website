@@ -1,4 +1,4 @@
-const { selectArticles, selectOrderedArticles, selectArticleComments, insertNewComment } = require('../models/articles.model')
+const { selectArticles, selectOrderedArticles, selectArticleComments, insertNewComment, updateVotes } = require('../models/articles.model')
 const { checkArticles } = require('../db/seeds/utils')
 
 
@@ -55,4 +55,19 @@ exports.insertComments = (req, res, next) => {
   .catch((err) => {
     next(err)
   })
+}
+
+
+
+exports.patchVotes = (req, res, next) => {
+  
+  const { article_id } = req.params 
+  const incVotes = req.body 
+  
+updateVotes(article_id, incVotes)
+.then((article) => {
+  res.status(200).send({article})
+}).catch((err) => {
+  next(err)
+})
 }
