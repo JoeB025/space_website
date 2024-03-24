@@ -32,7 +32,7 @@ exports.selectOrderedArticles = (sort_by = 'created_at', order = 'desc', topic =
     return Promise.reject({ status : 400, msg : 'invalid sort_by query'})
   }
 
-  const validTopicQueries = ['Astronomy', 'Moons', 'Planet', 'Black Holes', 'Supernova', 'Dwarf Planet', '']
+  const validTopicQueries = ['Astronomy', 'Moons', 'Planet', 'Black Holes', 'Supernova', 'Dwarf Planet', 'Testing', '']
   if(!validTopicQueries.includes(topic)) {
     return Promise.reject({ status : 400, msg : 'Not a valid topic!'})
   }

@@ -828,5 +828,50 @@ describe("app", () => {
 // add comment count to articles/articles_id 
 
 
-
+describe('app', () => {
+  describe('/api/articles/:article_id', () => {
+    test('GET / should return a comment count column' , () => {
+      return request(app)
+      .get('/api/articles/1')
+      .expect(200)
+      .then((res) => {
+        expect(res.body.article.comment_count).toBe('3')
+        expect(typeof res.body.article.comment_count).toBe('string')
+        expect(typeof Number(res.body.article.comment_count)).toBe('number')
+        expect(Number(res.body.article.comment_count)).toBe(3)
+        expect(res.body.article.title).toBe('Weird white dwarf star has a metal scar after eating a planet')
+        expect(res.body.article.author).toBe('SuperLeahCrane')
+        expect(res.body.article.article_id).toBe(1)
+        expect(res.body.article.votes).toBe(20)
+        expect(res.body.article.article_img_url).toBe('https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_22/1254611/151007-pluto-mn-1525.jpg')
+        expect(res.body.article.body.slice(0, 158)).toBe('Astronomers have spotted a white dwarf star with a patch of metal near one of its magnetic poles, which probably formed when the star devoured a small planet.')
+        expect(res.body.article.body.slice(2077)).toBe('Going back to make repeat observations of similar stars could unearth even more.')
+      })
+    })
+    test('GET / should return a comment count column', () => {
+      return request(app)
+      .get('/api/smarticles/1')
+      .expect(404)
+      .then((res) => {
+        expect(res.body.msg).toBe('endpoint not found')
+      })
+    })
+    test('GET / should return a comment count column', () => {
+      return request(app)
+      .get('/api/articles/999999999')
+      .expect(404)
+      .then((res) => {
+        expect(res.body.msg).toBe('article does not exist')
+      })
+    })
+    test('GET / should return a comment count column', () => {
+      return request(app)
+      .get('/api/articles/badRequest')
+      .expect(400)
+      .then((res) => {
+        expect(res.body.msg).toBe('Bad request')
+      })
+    })
+  })
+})
 
