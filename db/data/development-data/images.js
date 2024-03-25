@@ -150,5 +150,45 @@ module.exports = [
   {
     name: "star5",
     img_url: "https://www.space.fm/astronomy/images/diagrams/starsizes.jpg",
-  }
+  },
+  {
+    name: "background-stars",
+    img_url: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D"
+  },
+  {
+    name: "background-space1",
+    img_url: "https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+  },
+  {
+    name: "background-nebula",
+    img_url: "https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+  },
+  {
+    name: "background-spaceMan",
+    img_url: "https://t3.ftcdn.net/jpg/06/33/00/42/360_F_633004264_b6ZuRQZYAsZIEYfWdY15EAOiaG4ZJIbn.jpg"
+  },
+  {
+    name: "background-spaceBlue",
+    img_url: "https://st.depositphotos.com/1288351/3082/i/450/depositphotos_30826371-stock-photo-deep-space-background.jpg"
+  },
+  {
+    name: "background-spacePurple",
+    img_url: "https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-2.jpg"
+  },
+  {
+    name: "background-spaceTint",
+    img_url: "https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg"
+  },
+  {
+    name: "background-planets",
+    img_url: "https://static.vecteezy.com/system/resources/previews/024/448/956/large_2x/space-wallpaper-banner-background-stunning-view-of-a-cosmic-galaxy-with-planets-and-space-objects-elements-of-this-image-furnished-by-nasa-generate-ai-free-photo.jpg"
+  },
+  {
+    name: "background-spaceRed",
+    img_url: "https://media.istockphoto.com/id/1278839875/photo/deep-space-background.jpg?b=1&s=170667a&w=0&k=20&c=ZpDpKQKH_xFTHkjXpFvN_TASMbKUpORIwOYbhrA1USI="
+  },
+  {
+    name: "background-planetsBlue",
+    img_url: "https://images4.alphacoders.com/106/106826.jpg"
+  },
 ];
