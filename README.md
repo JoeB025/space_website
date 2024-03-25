@@ -16,7 +16,6 @@ operations on it.
 
 
 
-
 Ensure that PostgreSQL and psql (the PostgreSQL interactive terminal) are installed on your system.
 Elephant SQL
 
@@ -32,11 +31,17 @@ SELECT name, type FROM black_holes;
 
 
 
+Testing: 
+To test the data created in the database, test files have been set up with test data emulating the databases actual data. 
+To ensure the data works as expected, TDD has been used. "__tests__"
+To run the tests, Run npm run test
+
+
 
 
 
 Hosting the PSQL database 
-To host this APIm ElephantSQL has been used. This creates an online location for the database.
+To host this API, ElephantSQL has been used. This creates an online location for the database.
 Render has been used to host the API. 
 
 Example URL's
