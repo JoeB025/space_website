@@ -212,7 +212,7 @@ module.exports = [
     orbital_period_years: 84, // Earth years
     mass_exponent: 25,
     mean_radius: 25559, // km
-    img_url: "https://science.nasa.gov/wp-content/uploads/2023/09/poster_uranus_front_c.jpg?w=2048&format=webp",
+    img_url: "https://hips.hearstapps.com/hmg-prod/images/uranus-1585338466.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*",
     planet_description: 
     `Uranus, named after the Greek god of the sky, is the seventh planet from the Sun and the third-largest planet in our solar system. It is unique among the planets because it rotates on its side, with its axis tilted almost perpendicular to its orbit.
 
@@ -239,7 +239,7 @@ module.exports = [
     orbital_period_years: 165, // Earth years
     mass_exponent: 26,
     mean_radius: 24622, // km,
-    img_url: "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img_url: "https://static.independent.co.uk/2022/06/04/01/Neptune.jpg",
     planet_description: 
     `Neptune, named after the Roman god of the sea, is the eighth and farthest planet from the Sun in our solar system. It is one of the four gas giants, along with Jupiter, Saturn, and Uranus, and is composed mainly of hydrogen, helium, and methane.
 
