@@ -39,3 +39,11 @@ Hosting the PSQL database
 To host this APIm ElephantSQL has been used. This creates an online location for the database.
 Render has been used to host the API. 
 
+Example URL's
+https://space-website-1.onrender.com/api/users
+https://space-website-1.onrender.com/api/articles
+https://space-website-1.onrender.com/api/planets
+https://space-website-1.onrender.com/api/topics
+https://space-website-1.onrender.com/api/galaxies
+https://space-website-1.onrender.com/api/stars 
+etc ... 
