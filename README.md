@@ -32,3 +32,10 @@ SELECT name, type FROM black_holes;
 
 
 
+
+
+
+Hosting the PSQL database 
+To host this APIm ElephantSQL has been used. This creates an online location for the database.
+Render has been used to host the API. 
+
