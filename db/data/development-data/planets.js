@@ -14,7 +14,7 @@ module.exports = [
     orbital_period_years: 0.24, // Earth years
     mass_exponent: 24,
     mean_radius: 2439.7, // km,
-    img_url: "https://img.freepik.com/free-psd/mercury-planet-foreign-planet-isolated-transparent-background_191095-20243.jpg?w=740&t=st=1710859573~exp=1710860173~hmac=cb7b61e955d8c28a55e86069098fd67c64fb4618fe3b7e5ea5fa22e5d1ab91cf",
+    img_url: "https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg",
     planet_description: 
     `Mercury, named after the swift messenger of the gods 
     in Roman mythology, is the smallest and innermost planet 
