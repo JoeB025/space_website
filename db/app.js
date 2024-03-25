@@ -12,6 +12,7 @@ const { getPlanets } = require("../controllers/planets.controller");
 const { getMoons } = require("../controllers/moons.controller");
 const { deleteComments } = require("../controllers/comments.controller");
 const { getUsers } = require("../controllers/users.controller");
+const { getImages } = require("../controllers/images.controller");
 
 const cors = require("cors");
 
@@ -50,7 +51,7 @@ app.patch('/api/articles/:article_id', patchVotes) // update the votes on articl
 
 app.delete('/api/comments/:comment_id', deleteComments) // delete comments on articles
 
-
+app.get('/api/images', getImages) // get images
 
 app.all("*", (req, res) => {
   res.status(404).send({ Status: 404, msg: "endpoint not found" });

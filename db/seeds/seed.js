@@ -17,7 +17,8 @@ const seed = ({
   galaxyData,
   planetsData,
   moonData,
-  starsData
+  starsData,
+  imagesData
 }) => {
   return db
     .query(`DROP TABLE IF EXISTS comments;`)
@@ -50,6 +51,9 @@ const seed = ({
     })
     .then(() => {
       return db.query("DROP TABLE IF EXISTS stars;");
+    })
+    .then(() => {
+      return db.query("DROP TABLE IF EXISTS images;");
     })
     .then(() => {
       const topicsTablePromise = db.query(`
@@ -189,6 +193,14 @@ CREATE TABLE planet_names (
         age VARCHAR NOT NULL,
         description VARCHAR NOT NULL,
         size_comparison VARCHAR NOT NULL,
+        img_url VARCHAR NOT NULL
+      );`);
+    })
+    .then(() => {
+      return db.query(`
+      CREATE TABLE images (
+        images_id SERIAL PRIMARY KEY,
+        name VARCHAR NOT NULL,
         img_url VARCHAR NOT NULL
       );`);
     })
@@ -472,6 +484,21 @@ CREATE TABLE planet_names (
         ])
       )
       return db.query(insertStarsQueryStr)
+    })
+
+
+    .then(() => {
+      const insertImagesQueryStr = format(
+        `
+        INSERT INTO images
+        (name, img_url)
+        VALUES
+        %L
+        RETURNING *;
+        `,
+        imagesData.map(({ name, img_url }) => [ name, img_url ])
+      )
+      return db.query(insertImagesQueryStr)
     })
 
 };

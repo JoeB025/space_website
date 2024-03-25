@@ -9,3 +9,4 @@ exports.galaxyData = require('./galaxies.js');
 exports.planetsData = require('./planets.js');
 exports.moonData = require('./moons.js')
 exports.starsData = require('./stars.js');
+exports.imagesData = require('./images.js');

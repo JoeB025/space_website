@@ -1,7 +1,7 @@
 const db = require('../db/connection');
 
-exports.selectGalaxies = () => {
-  return db.query('SELECT * FROM galaxies')
+exports.selectImages = () => {
+  return db.query('SELECT * FROM images')
   .then((res) => {
     return res.rows 
   })

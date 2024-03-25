@@ -45,7 +45,7 @@ module.exports = [
     age: '8 to 8.5 million years',
     description: 'A red supergiant star located in the constellation Orion, one of the largest stars known.',
     size_comparison: '1000x to 1400x',
-    img_url: 'http://'
+    img_url: 'https://static.tweaktown.com/news/6/9/69693_01_closest-star-sun-end-visable-supernova-explosion_full.png'
 },
 {
     name: 'Vega',
@@ -57,7 +57,7 @@ module.exports = [
     age: '455 million years',
     description: 'The brightest star in the northern constellation of Lyra, the fifth-brightest star in the night sky.',
     size_comparison: '2.15x',
-    img_url: 'http://'
+    img_url: 'https://dq0hsqwjhea1.cloudfront.net/2017-09-26_59ca59ed7c8cc_04_Vega_20170922_400mm_10exp_280seg_3200iso_PI_PS.jpg'
 },
 {
     name: 'Arcturus',
@@ -69,7 +69,7 @@ module.exports = [
     age: '6 to 7 billion years',
     description: 'A red giant star in the constellation Boötes, the fourth-brightest star in the night sky.',
     size_comparison: '25.4x',
-    img_url: 'http://'
+    img_url: 'https://cdn.mos.cms.futurecdn.net/rDubZBD2ryyFooKzbeRu9G.jpg'
 },
 {
   name: 'Aldebaran',
@@ -81,7 +81,7 @@ module.exports = [
   age: '6.8 billion years',
   description: 'A red giant star located in the constellation Taurus, appearing as the eye of the bull.',
   size_comparison: '44.2x',
-  img_url: 'http://'
+  img_url: 'https://dq0hsqwjhea1.cloudfront.net/Aldebaran-Sun_comparison-800px.jpg'
 },
 {
 name: 'Deneb',
@@ -93,7 +93,7 @@ luminosity: '196,000 solar luminosities',
 age: '5 to 20 million years',
 description: 'A blue-white supergiant star located in the constellation Cygnus, one of the largest and brightest stars known.',
 size_comparison: '203x',
-img_url: 'http://'
+img_url: 'https://c02.purpledshub.com/uploads/sites/48/2022/05/deneb-summer-triangle-chart-01a28e8.jpg?webp=1&w=1200'
 },
 {
 name: 'Rigel',
@@ -105,7 +105,7 @@ luminosity: '120,000 solar luminosities',
 age: '8 to 9 million years',
 description: 'A blue supergiant star located in the constellation Orion, one of the brightest stars in the night sky.',
 size_comparison: '78.9x',
-img_url: 'http://'
+img_url: 'https://www.astronomytrek.com/wp-content/uploads/2016/02/rigel.jpg'
 },
 {
   name: 'Canopus',
@@ -117,7 +117,7 @@ img_url: 'http://'
   age: '8.7 million years',
   description: 'The brightest star in the southern constellation of Carina, the second-brightest star in the night sky, after Sirius.',
   size_comparison: '71.4x',
-  img_url: 'http://'
+  img_url: 'https://www.universalworkshop.com/guysblog/wp-content/uploads/2021/03/hours-06-Sirius-Canopus.jpg'
 },
 {
   name: 'Capella',
@@ -129,7 +129,7 @@ img_url: 'http://'
   age: '700 million years',
   description: 'The brightest star in the constellation of Auriga, the sixth-brightest star in the night sky.',
   size_comparison: '12x and 9.8x',
-  img_url: 'http://'
+  img_url: 'https://c02.purpledshub.com/uploads/sites/48/2020/09/Auriga-constellation-f61cb81.jpg?webp=1&w=1200'
 },
 {
   name: 'Proxima Centauri',
@@ -153,7 +153,7 @@ img_url: 'http://'
   age: '440 million years',
   description: 'A bright star in the constellation of Piscis Austrinus, also known as the "Lonely One" or "Solitary One".',
   size_comparison: '1.84x',
-  img_url: 'http://'
+  img_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazTz0IJyYkuq1irmG3QhIykdApObPLA65Az1_epv9uQ&s'
 },
 {
   name: 'Altair',
@@ -165,7 +165,7 @@ img_url: 'http://'
   age: '1.2 billion years',
   description: 'The brightest star in the constellation of Aquila, one of the vertices of the Summer Triangle.',
   size_comparison: '1.63x',
-  img_url: 'http://'
+  img_url: 'https://osr.org/wp-content/uploads/2016/08/altair-star.jpg'
 },
 {
   name: 'Regulus',
@@ -177,7 +177,7 @@ img_url: 'http://'
   age: '286 million years',
   description: 'The brightest star in the constellation of Leo, known as the "Heart of the Lion".',
   size_comparison: '3.5x',
-  img_url: 'http://'
+  img_url: 'https://astrophotographylens.com/cdn/shop/articles/regulus-star-1.jpg?v=1682471555'
 },
 {
   name: 'Achernar',
@@ -189,7 +189,7 @@ img_url: 'http://'
   age: '37 million years',
   description: 'The brightest star in the constellation of Eridanus, also known as "Alpha Eridani".',
   size_comparison: '8.7x',
-  img_url: 'http://'
+  img_url: 'https://osr.org/wp-content/uploads/2016/03/achernar-star.jpg'
 },
 {
   name: 'Antares',
@@ -201,7 +201,7 @@ img_url: 'http://'
   age: '12 million years',
   description: 'The brightest star in the constellation of Scorpius, often referred to as the "Heart of the Scorpion".',
   size_comparison: '680x',
-  img_url: 'http://'
+  img_url: 'https://www.statesman.com/gcdn/authoring/2020/06/26/NAAS/ghows-TX-a8ea08ae-207d-209e-e053-0100007fa21c-d2ed070d.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp'
 },
 {
   name: 'Spica',
@@ -213,7 +213,7 @@ img_url: 'http://'
   age: '12.5 million years',
   description: 'The brightest star in the constellation of Virgo, known as the "Ear of Wheat".',
   size_comparison: '7.1x',
-  img_url: 'http://'
+  img_url: 'https://astrophotographylens.com/cdn/shop/articles/spica-star-1.jpg?v=1682537907'
 },
 {
   name: 'Polaris',
@@ -225,6 +225,6 @@ img_url: 'http://'
   age: '70 million years',
   description: 'The brightest star in the constellation of Ursa Minor, known as the "North Star" or "Pole Star".',
   size_comparison: '46.9x',
-  img_url: 'http://'
+  img_url: 'https://spaceflightnow.com/news/n0006/10polaris/illustration.jpg'
 }
 ];

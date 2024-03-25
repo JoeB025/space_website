@@ -875,3 +875,20 @@ describe('app', () => {
   })
 })
 
+describe("app", () => {
+  describe("/api/images", () => {
+    test("GET /images should return an array of objects for each image in the database and a status code of 200.", () => {
+      return request(app)
+        .get("/api/images")
+        .expect(200)
+        .then((res) => {
+          res.body.image.forEach((image) => {
+            expect(typeof image.images_id).toBe("number");
+            expect(typeof image.name).toBe("string");
+            expect(typeof image.img_url).toBe("string");
+          });
+        });
+    });
+  });
+});
+

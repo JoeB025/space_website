@@ -233,4 +233,14 @@ module.exports = [
       avatar_url:
       "https://static.wikia.nocookie.net/p__/images/b/b0/ET_full.jpg/revision/latest?cb=20190916195452&path-prefix=protagonist"
     },
+    {
+      username: 'WesterosiQueen1',
+      name: "Cersei Lannister",
+      avatar_url: "https://upload.wikimedia.org/wikipedia/en/2/22/Cersei_Lannister_in_Black_Dress_in_Season_5.jpg"
+    },
+    {
+      username: 'TheRealWesterosiQueen',
+      name: "Daenerys Targaryen",
+      avatar_url: "https://s2.r29static.com/bin/entry/475/720x864,85/1852586/image.webp"
+    }
 ];
