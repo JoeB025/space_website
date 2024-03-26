@@ -54,7 +54,7 @@ module.exports = [
     orbital_period_years: 0.62, // Earth years
     mass_exponent: 24,
     mean_radius: 6051.8, // km
-    img_url: "https://images.pexels.com/photos/5476413/pexels-photo-5476413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img_url: "https://science.nasa.gov/wp-content/uploads/2023/09/Venus.jpg?w=4096&format=jpeg",
     planet_description: 
     `Venus, named after the Roman goddess of love and beauty, 
     is often referred to as Earth's "sister planet" due to its similar size and composition. 
@@ -156,7 +156,7 @@ module.exports = [
     orbital_period_years: 0, // The Sun does not orbit any other celestial body
     mass_exponent: 30, // kg
     mean_radius: 696340, // km
-    img_url: "https://solarsystem.nasa.gov/system/stellar_items/list_view_images/2_sun.png",
+    img_url: "https://www.aber.ac.uk/en/news/archive/2021/05/The-Sun-Mongta-Studio-Shutterstock.jpg",
     planet_description: 
     `The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth. 
   
@@ -210,7 +210,7 @@ module.exports = [
     orbital_period_years: 29.46, // Earth years
     mass_exponent: 26,
     mean_radius: 58232, // km
-    img_url: "https://science.nasa.gov/wp-content/uploads/2023/04/stsci-h-p2043a-f-1592x1137-1.png?w=2048&format=webp",
+    img_url: "https://planetfacts.org/wp-content/uploads/2023/12/planet_saturn.jpg",
     planet_description: 
     `Saturn, named after the Roman god of agriculture, is the sixth planet from the Sun and the second-largest planet in our solar system, after Jupiter. It is known for its distinctive rings, which are made up of ice, dust, and rock particles.
 
