@@ -8,7 +8,7 @@ module.exports = [
     number_of_stars: 'estimated 100 to 400 billion',
     visible_galactic_center: true,
     constellation: 'Sagittarius',
-    img_url: 'https://images.ctfassets.net/cnu0m8re1exe/76iARqWFwf5VQeHcy7FsYB/75246efbd9ac79410b75b5c0211723ba/shutterstock_738535111.jpg',
+    img_url: 'https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2023/12/top-down_view_of_the_milky_way/25373078-1-eng-GB/Top-down_view_of_the_Milky_Way_pillars.jpg',
     general_info: `The Milky Way is the galaxy that includes the Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye. The term Milky Way is a translation of the Latin via lactea, from the Greek γαλαξίας κύκλος (galaxías kýklos), meaning "milky circle". From Earth, the Milky Way appears as a band because its disk-shaped structure is viewed from within. Galileo Galilei first resolved the band of light into individual stars with his telescope in 1610. Until the early 1920s, most astronomers thought that the Milky Way contained all the stars in the Universe. Following the 1920 Great Debate between the astronomers Harlow Shapley and Heber Doust Curtis, observations by Edwin Hubble showed that the Milky Way is just one of many galaxies.
 
     The Milky Way is a barred spiral galaxy with a D25 isophotal diameter estimated at 26.8 ± 1.1 kiloparsecs (87,400 ± 3,600 light-years), but only about 1,000 light-years thick at the spiral arms (more at the bulge). Recent simulations suggest that a dark matter area, also containing some visible stars, may extend up to a diameter of almost 2 million light-years. The Milky Way has several satellite galaxies and is part of the Local Group of galaxies, which form part of the Virgo Supercluster, which is itself a component of the Laniakea Supercluster.
@@ -46,7 +46,7 @@ module.exports = [
     number_of_stars: 'estimated 1 trillion',
     visible_galactic_center: false,
     constellation: 'Andromeda',
-    img_url: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/M31_09-01-2011_%28cropped%29.jpg',
+    img_url: 'https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL2Rlc2lnbndpdGhtZTA5X2FuZHJvbWVkYV9nYWxheHlfaXNvbGF0ZWRfb25fYmxhY2tfYmFja2dyb3VuZF81M2VmODk2Ny0xODE3LTRmNzMtODFiNS1iYWQ3NTZmOWJjNzFfMS5qcGc.jpg',
     general_info: `The Andromeda Galaxy is a barred spiral galaxy and is the nearest major galaxy to the Milky Way. 
     It was originally named the Andromeda Nebula and is cataloged as Messier 31, M31, and NGC 224. Andromeda has a 
     diameter of about 46.56 kiloparsecs (152,000 light-years) and is approximately 765 kpc (2.5 million light-years) from Earth. 

@@ -70,6 +70,22 @@ module.exports = [
       "https://therealschool.in/blog/wp-content/uploads/2021/04/10-Interesting-Facts-About-Earth-1.jpg",
   },
   {
+    name: 'solarSystem5',
+    img_url: "https://www.worldatlas.com/r/w768/upload/6d/74/9d/adobestock-138333363.jpeg"
+  },
+  {
+    name: 'solarSystem6',
+    img_url: "https://spaceandbeyondbox.com/wp-content/uploads/2020/04/solarsystem.jpg"
+  },
+  {
+    name: "solarSystem7",
+    img_url: "https://i.natgeofe.com/k/d6f301e9-0c90-4379-9a64-1e1e9b048419/planetary-lineup_3x4.jpg"
+  }, 
+  {
+    name: "solarSystem8",
+    img_url: "https://osse.ssec.wisc.edu/img/planets/planets.jpg"
+  },
+  {
     name: "moon1",
     img_url:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/1200px-FullMoon2010.jpg",
@@ -190,5 +206,33 @@ module.exports = [
   {
     name: "background-planetsBlue",
     img_url: "https://images4.alphacoders.com/106/106826.jpg"
+  },
+  {
+    name: "planets3",
+    img_url: "https://t4.ftcdn.net/jpg/02/31/49/95/360_F_231499503_OVN9ejruvUrU2dgYGm53kFUovD8ULJda.jpg"
+  },
+  {
+    name: "planets4",
+    img_url: "https://www.syfy.com/sites/syfy/files/2019/04/superearth20180412-16.jpg"
+  },
+  {
+    name: 'aliens1',
+    img_url: "https://media.istockphoto.com/id/1365150278/photo/alien-watching-the-earth.jpg?s=612x612&w=0&k=20&c=qTOBWP_FDUypxHJ43AHsHXzLjcKCvQD4Hm1JqprKOK4="
+  },
+  {
+    name: 'aliens2',
+    img_url: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/2-alien-holding-earth-sebastian-kaulitzkiscience-photo-library.jpg"
+  },
+  {
+    name: 'aliens3',
+    img_url: "https://as2.ftcdn.net/v2/jpg/02/98/74/13/1000_F_298741331_m4FDUdJoKIn5tP9inzwFCbDbB95whBUJ.jpg"
+  },
+  {
+    name: 'aliens4',
+    img_url: "https://cdn.images.express.co.uk/img/dynamic/151/590x/aliens-news-exoplanets-alien-life-study-astronomy-evg-1350960.jpg?r=1603434544892"
+  },
+  {
+    name: 'aliens5',
+    img_url: "https://i.pinimg.com/1200x/be/10/d7/be10d7889bf6d040fc19c1d76dadf1fc.jpg"
   },
 ];

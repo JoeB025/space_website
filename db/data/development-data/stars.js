@@ -9,7 +9,7 @@ module.exports = [
       age: '4.6 billion years',
       description: 'The star at the center of the Solar System and the primary source of light and heat for Earth.',
       size_comparison: '1x',
-      img_url: 'https://images.ctfassets.net/cnu0m8re1exe/3u1zzE5h4Yrk0r3G2svT78/62abc977def3d662634beee769e855b2/sun.jpg'
+      img_url: 'https://imageio.forbes.com/blogs-images/startswithabang/files/2017/09/1-6ki7918Px2N2LJW8JdAzEg.jpg?height=711&width=711&fit=bounds'
   },
   {
       name: 'Sirius',

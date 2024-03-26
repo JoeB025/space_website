@@ -12,7 +12,7 @@ module.exports = [
     not the last.” In fact, the researchers have already found two white dwarfs that appear to have similar scars. 
     Going back to make repeat observations of similar stars could unearth even more.`,
     votes: 0,
-    article_img_url: 'https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_22/1254611/151007-pluto-mn-1525.jpg',
+    article_img_url: 'https://cff2.earth.com/uploads/2024/03/09174207/white-dwarf-stars.jpg',
     created_at: 1602370980000
   },
   { 
@@ -21,7 +21,7 @@ module.exports = [
     author: "tickle122",
     body: "An exoplanet called K2-18b has been suggested as a good place to look for alien life, but a new analysis shows it is probably made from gas. \n A distant planet once touted as a potential location to look for alien life is actually most likely to be inhospitable, according to astronomers who have found it probably lacks a solid surface. \n In 2015, astronomers discovered a planet 110 light years away called K2-18b, which later analysis estimated to be a super-Earth or mini-Neptune about eight times the mass of our world.",
     votes: 0, 
-    article_img_url: 'https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=4096&format=jpeg',
+    article_img_url: 'https://astrophotographylens.com/cdn/shop/articles/k2-18b.png?v=1705679634',
     created_at: 1602370980000
   },
   { 
@@ -116,7 +116,7 @@ module.exports = [
     
     In conclusion, the search for extraterrestrial life represents one of humanity's most profound and enduring quests. Through the exploration of our own solar system and the study of exoplanets orbiting distant stars, scientists are pushing the boundaries of knowledge and exploring the possibility that life may exist beyond Earth. As technology advances and our understanding of the universe deepens, we are poised to make groundbreaking discoveries that could forever change our perspective on the cosmos and our place within it.`,
     votes: 0,
-    article_img_url: 'https://miro.medium.com/v2/resize:fit:1358/0*ilCvbO8US6Hz-AKN',
+    article_img_url: 'https://media.istockphoto.com/id/1365150278/photo/alien-watching-the-earth.jpg?s=612x612&w=0&k=20&c=qTOBWP_FDUypxHJ43AHsHXzLjcKCvQD4Hm1JqprKOK4=',
     created_at: 1602370980000
   },
   {

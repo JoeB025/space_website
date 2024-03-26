@@ -142,6 +142,33 @@ module.exports = [
     Exploration of Mars has been ongoing, with numerous spacecraft and rovers sent to study the planet's surface, atmosphere, and geology. These missions have provided valuable insights into Mars' history and evolution and continue to pave the way for future human exploration.`
   },
   {
+    name: "Sun",
+    average_temp: 5778, // Kelvin
+    highest_recorded_temp: 15.6, // million Kelvin,
+    lowest_recorded_temp: 6000, // Kelvin (photosphere),
+    planet_type: "Yellow Dwarf (G-type main-sequence star)",
+    density: 1.408, // g/cm^3,
+    dimension: "1,391,000", // km (equatorial diameter)
+    distance_from_sun: 0, // The Sun is at the center of the solar system
+    gravity: 274, // m/s^2 (surface gravity)
+    mass_value: 1.989, // × 10^30 kg
+    number_of_moons: 0, // The Sun does not have any natural satellites
+    orbital_period_years: 0, // The Sun does not orbit any other celestial body
+    mass_exponent: 30, // kg
+    mean_radius: 696340, // km
+    img_url: "https://solarsystem.nasa.gov/system/stellar_items/list_view_images/2_sun.png",
+    planet_description: 
+    `The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth. 
+  
+    The Sun is a G-type main-sequence star that comprises about 99.86% of the total mass of the Solar System. Its diameter is about 1.39 million kilometers (870,000 miles), which is about 109 times the diameter of Earth. 
+  
+    The Sun is composed mainly of hydrogen and helium. It is classified as a yellow dwarf, but its color is white when viewed from space. 
+  
+    The Sun's surface temperature is approximately 5,778 Kelvin, while its core temperature is estimated to be around 15.6 million Kelvin. 
+  
+    The Sun is about 4.6 billion years old and has been burning hydrogen into helium in its core through nuclear fusion since its formation. It is expected to continue doing so for another 5 billion years, after which it will enter the red giant phase of its evolution.`
+  },
+  {
     name: "Jupiter",
     average_temp: -145,
     highest_recorded_temp: -108,
@@ -251,6 +278,37 @@ module.exports = [
     
     Neptune's deep blue color is due to the presence of methane in its atmosphere, which absorbs red light and reflects blue light. Despite its distant location, Neptune has been visited by only one spacecraft – NASA's Voyager 2 probe, which flew past the planet in 1989 and provided valuable data and images of this distant world.`
   },
+  {
+    name: "Pluto",
+    average_temp: 44, // Kelvin
+    highest_recorded_temp: 55, // Kelvin
+    lowest_recorded_temp: 33, // Kelvin
+    planet_type: "Dwarf Planet",
+    density: 1.854, // g/cm^3,
+    dimension: "2,377", // km (equatorial diameter)
+    distance_from_sun: 5906.38, // million km
+    gravity: 0.62, // m/s^2
+    mass_value: 1.30900, // × 10^22 kg
+    number_of_moons: 5,
+    orbital_period_years: 247.92, // Earth years
+    mass_exponent: 22,
+    mean_radius: 1188.3, // km
+    img_url: "https://cdn.mos.cms.futurecdn.net/DoZSMXF87kCuzbymsuEFHo-1200-80.jpg",
+    planet_description: 
+    `Pluto, once considered the ninth planet in our solar system, is now classified as a dwarf planet. It was discovered in 1930 by astronomer Clyde Tombaugh.
+  
+    Pluto is located in the Kuiper Belt, a region of icy bodies beyond the orbit of Neptune. It is one of the largest known objects in the Kuiper Belt.
+  
+    With a diameter of about 2,377 kilometers (1,477 miles), Pluto is much smaller than the eight major planets in the solar system. It is even smaller than some moons, including Earth's Moon.
+  
+    Pluto has a highly elliptical orbit that takes it as far as 7.4 billion kilometers (4.6 billion miles) from the Sun at its farthest point. It takes approximately 248 Earth years for Pluto to complete one orbit around the Sun.
+  
+    Pluto has a thin atmosphere composed mainly of nitrogen, with traces of methane and carbon monoxide. Its surface is covered in frozen nitrogen, methane, and carbon monoxide, giving it a reddish-brown color.
+  
+    Pluto has five known moons, the largest of which is Charon. Charon is so large in comparison to Pluto that the two bodies are sometimes referred to as a "double planet" system.
+  
+    Despite its small size, Pluto has been the subject of significant scientific interest. NASA's New Horizons spacecraft conducted a flyby of Pluto in 2015, providing the first close-up images of the distant dwarf planet and its moons.`
+  }
 ];
 
 
