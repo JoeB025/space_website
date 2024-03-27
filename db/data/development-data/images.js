@@ -102,14 +102,57 @@ module.exports = [
     img_url: "https://static.vecteezy.com/system/resources/previews/012/096/736/original/sun-and-planets-of-the-solar-system-set-on-a-black-background-stock-illustration-vector.jpg"
   },
   {
+    name: 'solarSystem10',
+    img_url: 'https://www.indiansinkuwait.com/ShowImage.aspx?img=/Newsfile/2972021151529107july2921saniya.jpg&w=650'
+  },
+  {
+    name: 'solarSystem11',
+    img_url: 'https://www.worldatlas.com/r/w768/upload/33/6d/0e/shutterstock-1651814935.jpg'
+  },
+  {
+    name: 'solarSystem12',
+    img_url: "https://t3.ftcdn.net/jpg/01/93/13/54/360_F_193135476_hMfR0lWZ2wz1wX5t8aKqYpLVUJaFLyms.jpg"
+  },
+  {
+    name: 'solarSystem13',
+    img_url: "https://i.pinimg.com/originals/ea/14/a4/ea14a418e3c068f7589b1de55612f289.jpg"
+  },
+  {
+    name: 'solarSystem14',
+    img_url: "https://wallpapers.com/images/hd/cute-black-and-white-aesthetic-solar-system-drawing-835bpa7w3uivjxo0.jpg"
+  },
+  {
+    name: 'solarSystem15',
+    img_url: "https://i.pinimg.com/736x/d2/d8/f8/d2d8f88a22e0ac21109cc182839b6ee4.jpg"
+  },
+  {
+    name: 'solarSystem16',
+    img_url: "https://i.pinimg.com/originals/78/2a/5d/782a5d50657f52579ad26b780d8f83d5.jpg"
+  },
+  {
+    name: 'solarSystem17',
+    img_url: "https://i.pinimg.com/originals/65/b7/e8/65b7e8d827322e4094f9c4d823c3dfd7.gif"
+  },
+  {
+    name: 'solarSystem18',
+    img_url: "https://cdn.dribbble.com/users/2643208/screenshots/6803444/solar_system_2d.gif"
+  },
+  {
+    name: 'solarSystem19',
+    img_url: "https://garden.spoonflower.com/c/13378985/p/f/m/YHaoT0FFI0p-WiflIk9W_-eP70W6p895fG4WPi1MbucqGoqfxcelX3g/Minimalist%20Solar%20System.jpg"
+  },
+  {
+    name: 'solarSystem20',
+    img_url: "https://cdn.dribbble.com/users/2643208/screenshots/9874533/media/769df2e4a466abe98dc6176fbf5fef5b.gif"
+  },
+  {
     name: "moon1",
     img_url:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/1200px-FullMoon2010.jpg",
   },
   {
     name: "moon2",
-    img_url:
-      "https://i.guim.co.uk/img/media/27bfde056f5f5664e6e3fe7ce0ffd01f778434a8/0_267_4608_2765/master/4608.jpg?width=465&dpr=1&s=none",
+    img_url:"https://i.guim.co.uk/img/media/27bfde056f5f5664e6e3fe7ce0ffd01f778434a8/0_267_4608_2765/master/4608.jpg?width=465&dpr=1&s=none",
   },
   {
     name: "moon3",
@@ -406,6 +449,25 @@ module.exports = [
   {
     name: 'neptune4',
     img_url: "https://images.squarespace-cdn.com/content/v1/5fa5ec79661ee904d2973ca0/1678752888290-2A53B1ST09WTKNPYW35R/neptune.png"
-  }
-
+  },
+  {
+    name: 'pluto1',
+    img_url: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Pluto_in_True_Color_-_High-Res.jpg"
+  },
+  {
+    name: 'pluto2',
+    img_url: "https://i.natgeofe.com/n/d37ef874-0dc6-4cd4-b244-74d6b3f7232c/Pluto4.jpg"
+  },
+  {
+    name: 'pluto3',
+    img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1-tRJHooCX8rr_nUFpM9Pesd_-cEn7urbG8WdejFRA&s"
+  },
+  {
+    name: 'pluto4',
+    img_url: "https://images.news9live.com/wp-content/uploads/2023/02/pluto.jpg?w=1200&enlarge=true"
+  },
+  {
+    name: 'astronaut1',
+    img_url: "https://wallpapers.com/images/hd/cute-dark-2kza9ijcnrgh5yjq.jpg"
+  },
 ];

@@ -210,7 +210,7 @@ module.exports = [
     orbital_period_years: 29.46, // Earth years
     mass_exponent: 26,
     mean_radius: 58232, // km
-    img_url: "https://planetfacts.org/wp-content/uploads/2023/12/planet_saturn.jpg",
+    img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/800px-Saturn_during_Equinox.jpg",
     planet_description: 
     `Saturn, named after the Roman god of agriculture, is the sixth planet from the Sun and the second-largest planet in our solar system, after Jupiter. It is known for its distinctive rings, which are made up of ice, dust, and rock particles.
 
@@ -239,7 +239,7 @@ module.exports = [
     orbital_period_years: 84, // Earth years
     mass_exponent: 25,
     mean_radius: 25559, // km
-    img_url: "https://hips.hearstapps.com/hmg-prod/images/uranus-1585338466.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*",
+    img_url: "https://upload.wikimedia.org/wikipedia/commons/6/69/Uranus_Voyager2_color_calibrated.png",
     planet_description: 
     `Uranus, named after the Greek god of the sky, is the seventh planet from the Sun and the third-largest planet in our solar system. It is unique among the planets because it rotates on its side, with its axis tilted almost perpendicular to its orbit.
 
@@ -266,7 +266,7 @@ module.exports = [
     orbital_period_years: 165, // Earth years
     mass_exponent: 26,
     mean_radius: 24622, // km,
-    img_url: "https://static.independent.co.uk/2022/06/04/01/Neptune.jpg",
+    img_url: "https://cdn.mos.cms.futurecdn.net/NrpYyu3sEmB5pcry9rWMk8-1200-80.jpg",
     planet_description: 
     `Neptune, named after the Roman god of the sea, is the eighth and farthest planet from the Sun in our solar system. It is one of the four gas giants, along with Jupiter, Saturn, and Uranus, and is composed mainly of hydrogen, helium, and methane.
 
@@ -293,7 +293,7 @@ module.exports = [
     orbital_period_years: 247.92, // Earth years
     mass_exponent: 22,
     mean_radius: 1188.3, // km
-    img_url: "https://cdn.mos.cms.futurecdn.net/DoZSMXF87kCuzbymsuEFHo-1200-80.jpg",
+    img_url: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Pluto_in_True_Color_-_High-Res.jpg",
     planet_description: 
     `Pluto, once considered the ninth planet in our solar system, is now classified as a dwarf planet. It was discovered in 1930 by astronomer Clyde Tombaugh.
   
