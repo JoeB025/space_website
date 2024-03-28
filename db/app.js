@@ -8,11 +8,13 @@ const { getStars } = require("../controllers/stars.controller");
 const { getAstronomyInfo } = require("../controllers/astronomyInfo.controller");
 const { getBlackHoles } = require("../controllers/blackHoles.controller");
 const { getGalaxies } = require("../controllers/galaxies.controller");
-const { getPlanets } = require("../controllers/planets.controller");
+const { getPlanets, getPlanetsById } = require("../controllers/planets.controller");
 const { getMoons } = require("../controllers/moons.controller");
 const { deleteComments } = require("../controllers/comments.controller");
 const { getUsers } = require("../controllers/users.controller");
 const { getImages } = require("../controllers/images.controller");
+ 
+
 
 const cors = require("cors");
 
@@ -39,7 +41,9 @@ app.get('/api/black_holes', getBlackHoles) // get black hole data
 
 app.get('/api/galaxies', getGalaxies) // get galaxy data
 
-app.get('/api/planets', getPlanets) // get planet data 
+app.get('/api/planets', getPlanets) // get planet data
+
+app.get('/api/planets/:planets_id', getPlanetsById) // get planets by id 
 
 app.get('/api/moons', getMoons) // get moon data
 

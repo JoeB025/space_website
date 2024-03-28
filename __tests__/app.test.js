@@ -237,6 +237,47 @@ describe("app", () => {
   });
 });
 
+
+describe("app", () => {
+  describe("/api/planets:planets_id", () => {
+    test("GET /planets should return the single requested planet object and status code 200", () => {
+      return request(app)
+        .get("/api/planets/3")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.planet.name).toBe("Earth");
+          expect(res.body.planet.average_temp).toBe(59);
+          expect(res.body.planet.highest_recorded_temp).toBe("136");
+          expect(res.body.planet.lowest_recorded_temp).toBe("-129");
+          expect(res.body.planet.planet_type).toBe("Rocky terrestrial");
+          expect(res.body.planet.density).toBe(5.514);
+          expect(res.body.planet.dimension).toBe("12,742");
+          expect(res.body.planet.distance_from_sun).toBe(149.6);
+          expect(res.body.planet.gravity).toBe(9.81);
+          expect(res.body.planet.mass_value).toBe(5.97237);
+          expect(res.body.planet.number_of_moons).toBe(1);
+          expect(res.body.planet.orbital_period_years).toBe(1);
+        })
+    });
+    test(`GET /planets should return a status code 404 and the message 'endpoint not found'`, () => {
+      return request(app)
+        .get("/api/no-planets/1")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+    test(`GET /planets should return a status code 404 and the message 'Page does not exist'`, () => {
+      return request(app)
+        .get("/api/planets/99999")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("Page does not exist");
+        });
+    });
+  });
+});
+
 describe("app", () => {
   describe("/api/black_holes", () => {
     test("GET /black_holes should return an array of objects for each black hole in the database and a status code of 200.", () => {
@@ -891,4 +932,6 @@ describe("app", () => {
     });
   });
 });
+
+
 
