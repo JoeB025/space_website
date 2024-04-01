@@ -179,6 +179,14 @@ module.exports = [
       "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/moon-phases-manuel-schmucker.jpg",
   },
   {
+    name: "moon8",
+    img_url: "https://media.istockphoto.com/id/1304910851/photo/waxing-crescent-moon-with-a-night-sky-stars-background-amazing-view-of-the-tiny-moon-surface.jpg?s=612x612&w=0&k=20&c=t-JMxIyfLtRU87Y4WmlxM01kXyVQqodDi-vwxrydjRE="
+  },
+  {
+    name: 'moon9',
+    img_url: "https://media.istockphoto.com/id/490137064/photo/full-moon-close-up.jpg?s=612x612&w=0&k=20&c=hNAqpqyWl58CgcjtKkOI-CE7MlkQItDMa1B4__IxlzU="
+  },
+  {
     name: "galaxy1",
     img_url:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/800px-NGC_4414_%28NASA-med%29.jpg",
@@ -469,5 +477,29 @@ module.exports = [
   {
     name: 'astronaut1',
     img_url: "https://wallpapers.com/images/hd/cute-dark-2kza9ijcnrgh5yjq.jpg"
+  },
+  {
+    name: 'astronaut2',
+    img_url: "https://c8.alamy.com/zooms/9/d3dc7fe723324464bc2351592fedf0fc/w8a1x1.jpg"
+  },
+  {
+    name: 'astronaut3',
+    img_url: "https://img.freepik.com/premium-photo/astronaut-space-black-background-3d-illustration_151689-452.jpg"
+  },
+  {
+    name: 'astronaut4',
+    img_url: "https://img.freepik.com/premium-photo/full-body-astronaut-black-background_693425-8922.jpg"
+  },
+  {
+    name: 'astronaut5',
+    img_url: "https://image.spreadshirtmedia.net/image-server/v1/compositions/T875A2PA5134PT17X44Y34D152764949W20859H25031/views/1,width=550,height=550,appearanceId=2,backgroundColor=000000,noPt=true/cool-space-astronaut-mens-premium-longsleeve-shirt.jpg"
+  },
+  {
+    name: 'astronaut6',
+    img_url: ""
+  },
+  {
+    name: 'astronaut7',
+    img_url: ""
   },
 ];
