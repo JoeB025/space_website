@@ -1,24 +1,6 @@
 module.exports = [
 
   {
-    orbits: "Mercury",
-    moon_name: "Mercury has no moons",
-    distance_from_planet: "Data unavailable", // km
-    gravity: "Data unavailable", // m/s^2
-    mass_value: "Data unavailable", // × 10^22 kg
-    mass_exponent: "Data unavailable",
-    mean_radius: "Data unavailable" // km
-  },
-  {
-    orbits: "Venus",
-    moon_name: "Venus has no moons",
-    distance_from_planet: "Data unavailable", // km
-    gravity: "Data unavailable", // m/s^2
-    mass_value: "Data unavailable", // × 10^22 kg
-    mass_exponent: "Data unavailable",
-    mean_radius: "Data unavailable" // km
-  },
-  {
     orbits: "Earth",
     moon_name: "The Moon",
     distance_from_planet: 384400, // km
@@ -44,6 +26,124 @@ module.exports = [
     mass_value: 1.4762, // × 10^15 kg
     mass_exponent: 15,
     mean_radius: 6.2 // km
+  },
+
+  {
+    orbits: "Jupiter",
+    moon_name: "Lysithea",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Ananke",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Carme",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Pasiphae",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Sinope",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Himalia",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Elara",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Metis",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Adrastea",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Thebe",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Leda",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Harpalyke",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Jupiter",
+    moon_name: "Dia",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
   },
   {
     orbits: "Jupiter",
@@ -739,6 +839,87 @@ module.exports = [
     mean_radius: 34 // km
   },
   {
+    orbits: "Uranus",
+    moon_name: "Puck",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Uranus",
+    moon_name: "Trinculo",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Uranus",
+    moon_name: "Mab",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Uranus",
+    moon_name: "Perdita",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Uranus",
+    moon_name: "Cupid",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Uranus",
+    moon_name: "Ferdinand",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Uranus",
+    moon_name: "Francisco",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Uranus",
+    moon_name: "Stephano",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Uranus",
+    moon_name: "Belinda",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
     orbits: "Neptune",
     moon_name: "Triton",
     distance_from_planet: 354, // km
@@ -809,5 +990,60 @@ module.exports = [
     mass_value: 0.5, // × 10^22 kg
     mass_exponent: 22,
     mean_radius: 210 // km
+  },
+  {
+    orbits: "Neptune",
+    moon_name: "Hippocamp",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Neptune",
+    moon_name: "Psamathe",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Neptune",
+    moon_name: "Sao",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Neptune",
+    moon_name: "Laomedeia",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Neptune",
+    moon_name: "Neso",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
+  },
+  {
+    orbits: "Neptune",
+    moon_name: "Halimede",
+    distance_from_planet: "Data unavailable",
+    gravity: "Data unavailable",
+    mass_value: "Data unavailable",
+    mass_exponent: "Data unavailable",
+    mean_radius: "Data unavailable"
   }
 ]
+
