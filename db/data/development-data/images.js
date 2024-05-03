@@ -493,13 +493,5 @@ module.exports = [
   {
     name: 'astronaut5',
     img_url: "https://image.spreadshirtmedia.net/image-server/v1/compositions/T875A2PA5134PT17X44Y34D152764949W20859H25031/views/1,width=550,height=550,appearanceId=2,backgroundColor=000000,noPt=true/cool-space-astronaut-mens-premium-longsleeve-shirt.jpg"
-  },
-  {
-    name: 'astronaut6',
-    img_url: ""
-  },
-  {
-    name: 'astronaut7',
-    img_url: ""
-  },
+  }
 ];

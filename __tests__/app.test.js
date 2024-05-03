@@ -374,6 +374,44 @@ describe("app", () => {
   });
 });
 
+
+describe("app", () => {
+  describe("GET /api/users/:username", () => {
+    test(`GET/ return selected user`, () => {
+      return request(app)
+        .get("/api/users/jessjelly")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.user.username).toBe("jessjelly");
+          expect(res.body.user.name).toBe("Jess Jelly");
+          expect(res.body.user.avatar_url).toBe(
+            "https://vignette.wikia.nocookie.net/mrmen/images/4/4f/MR_JELLY_4A.jpg/revision/latest?cb=20180104121141"
+          );
+        });
+    });
+    test(`GET/ return selected user`, () => {
+      return request(app)
+        .get("/api/users/PokemonMasterOne")
+        .expect(200)
+        .then((res) => {
+          expect(res.body.user.username).toBe("PokemonMasterOne");
+          expect(res.body.user.name).toBe("Ash Ketchum");
+          expect(res.body.user.avatar_url).toBe(
+            "https://upload.wikimedia.org/wikipedia/en/e/e4/Ash_Ketchum_Journeys.png"
+          );
+        });
+    });
+    test(`GET /request should return an error status code of 404 with the message 'user not found' when requesting a username that does not exist`, () => {
+      return request(app)
+        .get("/api/users/fakeUsername")
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("User not found");
+        });
+    });
+  });
+});
+
 describe("app", () => {
   describe("/api/articles:article_id", () => {
     test("GET /articles should return the single requested article object and status code 200", () => {

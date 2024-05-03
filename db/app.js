@@ -11,7 +11,7 @@ const { getGalaxies } = require("../controllers/galaxies.controller");
 const { getPlanets, getPlanetsById } = require("../controllers/planets.controller");
 const { getMoons } = require("../controllers/moons.controller");
 const { deleteComments } = require("../controllers/comments.controller");
-const { getUsers } = require("../controllers/users.controller");
+const { getUsers, getUserByUsername } = require("../controllers/users.controller");
 const { getImages } = require("../controllers/images.controller");
 
 
@@ -48,6 +48,8 @@ app.get('/api/planets/:planets_id', getPlanetsById) // get planets by id
 app.get('/api/moons', getMoons) // get moon data
 
 app.get('/api/users', getUsers) // get user data
+
+app.get('/api/users/:username', getUserByUsername); // get user by username
 
 app.post('/api/articles/:article_id/comments', insertComments) // insert article comments
 
