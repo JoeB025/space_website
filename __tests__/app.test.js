@@ -972,4 +972,93 @@ describe("app", () => {
 });
 
 
+describe("app", () => {
+  describe("/api/comments/:comment_id", () => {
+    test("Check status code returns 200 for valid patch requests", () => {
+      return request(app)
+        .patch("/api/comments/1")
+        .send({ inc_votes: -1 })
+        .expect(200);
+    });
+    test("Check votes decrease by one and returns an object containing correct information", () => {
+      return request(app)
+        .patch("/api/comments/3")
+        .send({ inc_votes: -2 })
+        .expect(200)
+        .then((res) => {
+          console.log(res.body.comments)
+          expect(res.body.comments).toMatchObject({
+            comment_id: 3,
+            body: "I thought Pluto was a dog?",
+            article_id: 1,
+            author: "happyamy2016",
+            votes: 18
+          });
+          expect(res.body.comments.hasOwnProperty("comment_id")).toBe(true);
+          expect(typeof res.body.comments.comment_id).toBe("number");
+          expect(typeof res.body.comments.body).toBe("string");
+          expect(typeof res.body.comments.article_id).toBe("number");
+          expect(typeof res.body.comments.author).toBe("string");
+          expect(typeof res.body.comments.votes).toBe("number");
+        });
+    });
+    test("Check increment works for a different number", () => {
+      return request(app)
+        .patch("/api/comments/5")
+        .send({ inc_votes: +35 })
+        .expect(200)
+        .then((res) => {
+          console.log(res.body.comments)
+          expect(res.body.comments.votes).toBe(49);
+        });
+    });
+    test("Check error 404 is returned for incorrect endpoint", () => {
+      return request(app)
+        .patch("/api/no_comments/1")
+        .send({ inc_votes: +1 })
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("endpoint not found");
+        });
+    });
+    test("Check error 404 for requests that could be valid but are yet to exist", () => {
+      return request(app)
+        .patch("/api/comments/9999999")
+        .send({ inc_votes: +5 })
+        .expect(404)
+        .then((res) => {
+          expect(res.body.msg).toBe("comment does not exist");
+        });
+    });
+    test("Check error 400 when passed a string of letters as an incrementor", () => {
+      return request(app)
+        .patch("/api/comments/1")
+        .send({ inc_votes: "five" })
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
+    });
+    test("Check error 400 when passed in an invalid incrementor", () => {
+      return request(app)
+        .patch("/api/comments/1")
+        .send({ inc_votes: false })
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
+    });
+    test("Check error 400 when given incorrect object key", () => {
+      return request(app)
+        .patch("/api/comments/1")
+        .send({ increaseMyVoteCount: -1 })
+        .expect(400)
+        .then((res) => {
+          expect(res.body.msg).toBe("Bad request");
+        });
+    });
+  });
+});
+
+
 

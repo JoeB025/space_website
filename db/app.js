@@ -10,7 +10,7 @@ const { getBlackHoles } = require("../controllers/blackHoles.controller");
 const { getGalaxies } = require("../controllers/galaxies.controller");
 const { getPlanets, getPlanetsById } = require("../controllers/planets.controller");
 const { getMoons } = require("../controllers/moons.controller");
-const { deleteComments } = require("../controllers/comments.controller");
+const { deleteComments, patchCommentVotes } = require("../controllers/comments.controller");
 const { getUsers, getUserByUsername } = require("../controllers/users.controller");
 const { getImages } = require("../controllers/images.controller");
 
@@ -56,6 +56,8 @@ app.post('/api/articles/:article_id/comments', insertComments) // insert article
 app.patch('/api/articles/:article_id', patchVotes) // update the votes on articles 
 
 app.delete('/api/comments/:comment_id', deleteComments) // delete comments on articles
+
+app.patch('/api/comments/:comment_id', patchCommentVotes) // update the votes on comments posted to articles
 
 app.get('/api/images', getImages) // get images
 

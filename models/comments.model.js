@@ -1,7 +1,7 @@
 const db = require('../db/connection')
 
 
-
+// delete comments 
 exports.removeCommentsBy = (comment_id) => {
 
   let query =
@@ -17,5 +17,27 @@ exports.removeCommentsBy = (comment_id) => {
       });
     }
     return result.rows[0]
+  })
+}
+
+
+// update comment votes 
+exports.updateCommentVotes = (comment_id, incComment) => {
+
+  let query = 
+  `UPDATE comments
+  SET votes = votes + ${incComment.inc_votes}
+  WHERE comment_id = ${comment_id}
+  RETURNING *`
+
+  return db.query(query)
+  .then((res) => {
+    if (res.rowCount === 0) {
+      return Promise.reject({
+        status: 404,
+        msg: 'comment does not exist'
+      });
+    }
+    return res.rows[0]
   })
 }
