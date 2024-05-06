@@ -986,7 +986,6 @@ describe("app", () => {
         .send({ inc_votes: -2 })
         .expect(200)
         .then((res) => {
-          console.log(res.body.comments)
           expect(res.body.comments).toMatchObject({
             comment_id: 3,
             body: "I thought Pluto was a dog?",
@@ -1008,7 +1007,6 @@ describe("app", () => {
         .send({ inc_votes: +35 })
         .expect(200)
         .then((res) => {
-          console.log(res.body.comments)
           expect(res.body.comments.votes).toBe(49);
         });
     });
@@ -1062,3 +1060,98 @@ describe("app", () => {
 
 
 
+describe("app", () => {
+  describe("POST /api/articles", () => {
+    test("POST /articles should create a new article and return the article object with a status code of 201", () => {
+      return request(app)
+        .post("/api/articles")
+        .send({
+          topic: "Dwarf Planet",
+          title: "testing posting a new Dwarf Planet article",
+          author: "happyamy2016",
+          body: "Testing posting a new article on dwarf planets",
+          article_img_url: "http"
+        })
+        .expect(201)
+        .then((res) => {
+          expect(typeof res.body.article).toBe("object")
+          const { article } = res.body;
+          expect(article.topic).toBe("Dwarf Planet");
+          expect(article.title).toBe("testing posting a new Dwarf Planet article");
+          expect(article.author).toBe("happyamy2016");
+          expect(article.body).toBe("Testing posting a new article on dwarf planets");
+          expect(article.article_img_url).toBe("http");
+          expect(article).toMatchObject(
+            {
+              article_id: 13,
+              title: 'testing posting a new Dwarf Planet article',
+              topic: 'Dwarf Planet',
+              author: 'happyamy2016',
+              body: 'Testing posting a new article on dwarf planets',
+              votes: 0,
+              article_img_url: 'http',
+              comment_count: '0'
+            }
+          )
+        });
+    });
+    test("POST /articles should return a 404 status code when provided an incorrect endpoint.", () => {
+      return request(app)
+      .post("/api/notArticles")
+      .send({
+        topic: "Dwarf Planet",
+        title: "testing posting a new Dwarf Planet article",
+        author: "happyamy2016",
+        body: "Testing posting a new article on dwarf planets",
+        article_img_url: "http"
+      })
+      .expect(404)
+      .then((res) => {
+         expect(res.body.msg).toBe("endpoint not found");
+       });
+    }) 
+    test("POST /articles should return a 400 status code when not providing all the required object keys. topic key removed", () => {
+      return request(app)
+      .post("/api/articles")
+      .send({
+        title: "testing posting a new Dwarf Planet article",
+        author: "happyamy2016",
+        body: "Testing posting a new article on dwarf planets",
+        article_img_url: "http"
+      })
+      .expect(400)
+      .then((res) => {
+         expect(res.body.msg).toBe("Bad request");
+       });
+    })
+    test("POST /articles should return a 400 status code when not providing all the required object keys. author key removed", () => {
+      return request(app)
+      .post("/api/articles")
+      .send({
+        topic: "Dwarf Planet",
+        title: "testing posting a new Dwarf Planet article",
+        body: "Testing posting a new article on dwarf planets",
+        article_img_url: "http"
+      })
+      .expect(400)
+      .then((res) => {
+         expect(res.body.msg).toBe("Bad request");
+       });
+    })
+    test("POST /articles should return a 400 status code when providing incorrect object keys. title key changed to heading.", () => {
+      return request(app)
+      .post("/api/articles")
+      .send({
+        topic: "Dwarf Planet",
+        heading: "testing posting a new Dwarf Planet article",
+        author: "happyamy2016",
+        body: "Testing posting a new article on dwarf planets",
+        article_img_url: "http"
+      })
+      .expect(400)
+      .then((res) => {
+         expect(res.body.msg).toBe("Bad request");
+       });
+    })
+  });
+});

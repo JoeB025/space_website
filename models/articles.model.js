@@ -120,3 +120,22 @@ exports.updateVotes = (article_id, incComment) => {
   })
 }
 
+
+
+exports.insertNewArticle = ({ topic, title, author, body, article_img_url }) => {
+  let query = ` 
+    INSERT INTO articles (topic, title, author, body, article_img_url)
+    VALUES ($1, $2, $3, $4, $5)
+    RETURNING *, (
+      SELECT COUNT(comment_id) AS comment_count
+      FROM comments
+      WHERE comments.article_id = articles.article_id
+    ) AS comment_count;
+  `;
+
+  return db.query(query, [topic, title, author, body, article_img_url])
+    .then((res) => {
+      return res.rows[0];
+    });
+};
+

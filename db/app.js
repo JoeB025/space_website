@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const { getTopics } = require("../controllers/topics.controller");
 const { getAllData } = require("../controllers/api.controller");
-const { getArticles, getOrderedArticles, getArticleComments, insertComments, patchVotes } = require("../controllers/articles.controller");
+const { getArticles, getOrderedArticles, getArticleComments, insertComments, patchVotes, postArticle } = require("../controllers/articles.controller");
 const { getPlanetNames } = require("../controllers/planetNames.controller");
 const { getStars } = require("../controllers/stars.controller");
 const { getAstronomyInfo } = require("../controllers/astronomyInfo.controller");
@@ -60,6 +60,8 @@ app.delete('/api/comments/:comment_id', deleteComments) // delete comments on ar
 app.patch('/api/comments/:comment_id', patchCommentVotes) // update the votes on comments posted to articles
 
 app.get('/api/images', getImages) // get images
+
+app.post('/api/articles', postArticle) // post new articles
 
 app.all("*", (req, res) => {
   res.status(404).send({ Status: 404, msg: "endpoint not found" });
