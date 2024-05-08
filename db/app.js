@@ -13,13 +13,19 @@ const { getMoons } = require("../controllers/moons.controller");
 const { deleteComments, patchCommentVotes } = require("../controllers/comments.controller");
 const { getUsers, getUserByUsername } = require("../controllers/users.controller");
 const { getImages } = require("../controllers/images.controller");
-
-
-
 const cors = require("cors");
+
+
 
 app.use(cors());
 app.use(express.json());
+
+// this will show what requests are being received and the url they are requested on.
+app.use((req, res, next) => {
+  console.log(`Received a ${req.method} request on ${req.url}`);
+  next();
+});
+
 
 app.get("/api/topics", getTopics); // gets the topics data
 
@@ -63,14 +69,16 @@ app.get('/api/images', getImages) // get images
 
 app.post('/api/articles', postArticle) // post new articles
 
+
+
 app.all("*", (req, res) => {
   res.status(404).send({ Status: 404, msg: "endpoint not found" });
 }); // rejects all promises where an endpoint is not found
 
 app.use((err, req, res, next) => {
-  // console.log(err)
-  // console.log(err.code)
-  // console.log(err.detail)
+  console.log(err, '<<<< error')
+  console.log(err.code, '<<<< error code')
+  console.log(err.detail, '<<< error details')
 
   if (err.code === "23503" && err.detail.includes("article_id")) {
     res.status(404).send({ Status: 404, msg: "article does not exist" });

@@ -1067,24 +1067,26 @@ describe("app", () => {
         .post("/api/articles")
         .send({
           topic: "Dwarf Planet",
-          title: "testing posting a new Dwarf Planet article",
+          title: "New Article Title",
           author: "happyamy2016",
           body: "Testing posting a new article on dwarf planets",
           article_img_url: "http"
         })
         .expect(201)
         .then((res) => {
+          console.log(res.body.article, 'Have a look to see if created at is in the obj')
           expect(typeof res.body.article).toBe("object")
           const { article } = res.body;
           expect(article.topic).toBe("Dwarf Planet");
-          expect(article.title).toBe("testing posting a new Dwarf Planet article");
+          expect(article.title).toBe("New Article Title");
           expect(article.author).toBe("happyamy2016");
           expect(article.body).toBe("Testing posting a new article on dwarf planets");
           expect(article.article_img_url).toBe("http");
+          expect(Number(article.comment_count)).toBe(0)
           expect(article).toMatchObject(
             {
               article_id: 13,
-              title: 'testing posting a new Dwarf Planet article',
+              title: 'New Article Title',
               topic: 'Dwarf Planet',
               author: 'happyamy2016',
               body: 'Testing posting a new article on dwarf planets',
@@ -1099,11 +1101,11 @@ describe("app", () => {
       return request(app)
       .post("/api/notArticles")
       .send({
-        topic: "Dwarf Planet",
-        title: "testing posting a new Dwarf Planet article",
-        author: "happyamy2016",
-        body: "Testing posting a new article on dwarf planets",
-        article_img_url: "http"
+        topic: "topic - testing for incorrect endpoint",
+        title: "title - testing for incorrect endpoint",
+        author: "weegembump",
+        body: "body - testing for incorrect endpoint",
+        article_img_url: "img - testing for incorrect endpoint",
       })
       .expect(404)
       .then((res) => {
@@ -1114,10 +1116,10 @@ describe("app", () => {
       return request(app)
       .post("/api/articles")
       .send({
-        title: "testing posting a new Dwarf Planet article",
-        author: "happyamy2016",
-        body: "Testing posting a new article on dwarf planets",
-        article_img_url: "http"
+        title: "testing title with a missing object key of topic",
+        author: "grumpy19",
+        body: "testing body with a missing object key of topic",
+        article_img_url: "testing img with missing object key of topic"
       })
       .expect(400)
       .then((res) => {
@@ -1128,10 +1130,10 @@ describe("app", () => {
       return request(app)
       .post("/api/articles")
       .send({
-        topic: "Dwarf Planet",
-        title: "testing posting a new Dwarf Planet article",
-        body: "Testing posting a new article on dwarf planets",
-        article_img_url: "http"
+        topic: "testing topic with a missing object key of author",
+        title: "testing title with a missing object key of author",
+        body: "testing body with a missing object key of author",
+        article_img_url: "testing img with a missing object key of author"
       })
       .expect(400)
       .then((res) => {
@@ -1144,7 +1146,7 @@ describe("app", () => {
       .send({
         topic: "Dwarf Planet",
         heading: "testing posting a new Dwarf Planet article",
-        author: "happyamy2016",
+        author: "tickle122",
         body: "Testing posting a new article on dwarf planets",
         article_img_url: "http"
       })
