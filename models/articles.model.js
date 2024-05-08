@@ -123,12 +123,12 @@ exports.updateVotes = (article_id, incComment) => {
 
 
 exports.insertNewArticle = ({ topic, title, author, body, article_img_url }) => {
-  console.log("Inserting new article...", topic, title, author, body, article_img_url);
-  console.log(topic, 'topic <<<')
-  console.log(title, 'title <<<')
-  console.log(author, 'author <<<')
-  console.log(body, 'body <<<')
-  console.log(article_img_url, 'article_img_url <<<')
+  // console.log("Inserting new article...", topic, title, author, body, article_img_url);
+  // console.log(topic, 'topic <<<')
+  // console.log(title, 'title <<<')
+  // console.log(author, 'author <<<')
+  // console.log(body, 'body <<<')
+  // console.log(article_img_url, 'article_img_url <<<')
   let query = ` 
     INSERT INTO articles (topic, title, author, body, article_img_url)
     VALUES ($1, $2, $3, $4, $5)
@@ -142,10 +142,11 @@ exports.insertNewArticle = ({ topic, title, author, body, article_img_url }) => 
   return db.query(query, [topic, title, author, body, article_img_url])
     .then((res) => {
       console.log("New article inserted:", res.rows[0]);
+      console.log(res.rows[0].topic, '<<<<<<<<<<<< ')
       return res.rows[0];
     })
     .catch((err) => {
-      console.error("Error inserting new article:", err);
+      // console.error("Error inserting new article:", err);
       throw err;
     });
 };

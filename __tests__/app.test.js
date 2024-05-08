@@ -1074,7 +1074,6 @@ describe("app", () => {
         })
         .expect(201)
         .then((res) => {
-          console.log(res.body.article, 'Have a look to see if created at is in the obj')
           expect(typeof res.body.article).toBe("object")
           const { article } = res.body;
           expect(article.topic).toBe("Dwarf Planet");
@@ -1097,9 +1096,78 @@ describe("app", () => {
           )
         });
     });
+    test("POST /articles should create a new article and return the article object with a status code of 201", () => {
+      return request(app)
+        .post("/api/articles")
+        .send({
+          topic: "Planet",
+          title: "The Planet of Dreams",
+          author: "PokemonMasterOne",
+          body: "Testing posting a new article on Planets",
+          article_img_url: "http://FakeImgURL"
+        })
+        .expect(201)
+        .then((res) => {
+          expect(typeof res.body.article).toBe("object")
+          const { article } = res.body;
+          expect(article.topic).toBe("Planet");
+          expect(article.title).toBe("The Planet of Dreams");
+          expect(article.author).toBe("PokemonMasterOne");
+          expect(article.body).toBe("Testing posting a new article on Planets");
+          expect(article.article_img_url).toBe("http://FakeImgURL");
+          expect(Number(article.comment_count)).toBe(0)
+          expect(article).toMatchObject(
+            {
+              article_id: 13,
+              title: 'The Planet of Dreams',
+              topic: 'Planet',
+              author: 'PokemonMasterOne',
+              body: 'Testing posting a new article on Planets',
+              votes: 0,
+              article_img_url: 'http://FakeImgURL',
+              comment_count: '0'
+            }
+          )
+        });
+    });
+    test("POST /articles should create a new article and return the article object with a status code of 201", () => {
+      return request(app)
+        .post("/api/articles")
+        .send({
+          topic: "Black holes",
+          title: "The Planet of Dreams",
+          author: "PokemonMasterOne",
+          body: "Testing posting a new article on Planets",
+          article_img_url: "http://FakeImgURL"
+        })
+        .expect(201)
+        .then((res) => {
+          console.log(res.body.article, 'Have a look to see if created at is in the obj')
+          expect(typeof res.body.article).toBe("object")
+          const { article } = res.body;
+          expect(article.topic).toBe("Black holes");
+          expect(article.title).toBe("The Planet of Dreams");
+          expect(article.author).toBe("PokemonMasterOne");
+          expect(article.body).toBe("Testing posting a new article on Planets");
+          expect(article.article_img_url).toBe("http://FakeImgURL");
+          expect(Number(article.comment_count)).toBe(0)
+          expect(article).toMatchObject(
+            {
+              article_id: 13,
+              title: 'The Planet of Dreams',
+              topic: 'Black holes',
+              author: 'PokemonMasterOne',
+              body: 'Testing posting a new article on Planets',
+              votes: 0,
+              article_img_url: 'http://FakeImgURL',
+              comment_count: '0'
+            }
+          )
+        });
+    });
     test("POST /articles should return a 404 status code when provided an incorrect endpoint.", () => {
       return request(app)
-      .post("/api/notArticles")
+      .post("/api/wrongEndpoint")
       .send({
         topic: "topic - testing for incorrect endpoint",
         title: "title - testing for incorrect endpoint",

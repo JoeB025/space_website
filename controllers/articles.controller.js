@@ -76,16 +76,15 @@ exports.patchVotes = (req, res, next) => {
 
 exports.postArticle = (req, res, next) => {
   const newArticle = req.body;
-  newArticle.created_at = new Date().toISOString();
-  console.log("New Article Data:", newArticle);
+  // console.log("New Article Data:", newArticle);
 
   insertNewArticle(newArticle)
     .then((article) => {
-      console.log("Article inserted:", article);
+      // console.log("Article inserted:", article);
       res.status(201).send({ article });
     })
     .catch((err) => {
-      console.error("Error inserting article:", err);
+      // console.error("Error inserting article:", err);
       next(err);
     });
 };
