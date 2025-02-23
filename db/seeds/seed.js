@@ -205,6 +205,8 @@ CREATE TABLE planet_names (
       );`);
     })
     .then(() => {
+
+      
       const insertTopicsQueryStr = format(
         "INSERT INTO topics (slug, description) VALUES %L;",
         topicData.map(({ slug, description }) => [slug, description])

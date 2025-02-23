@@ -70,10 +70,10 @@ app.all("*", (req, res) => {
 }); // rejects all promises where an endpoint is not found
 
 app.use((err, req, res, next) => {
-  // console.log(err, '<<<< error')
-  // console.log(err.code, '<<<< error code')
-  // console.log(err.detail, '<<< error details')
-  // console.log(`Received a ${req.method} request on ${req.url}`)
+  console.log(err, '<<<< error')
+  console.log(err.code, '<<<< error code')
+  console.log(err.detail, '<<< error details')
+  console.log(`Received a ${req.method} request on ${req.url}`)
 
   if (err.code === "23503" && err.detail.includes("article_id")) {
     res.status(404).send({ Status: 404, msg: "article does not exist" });
