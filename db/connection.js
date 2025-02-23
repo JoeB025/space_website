@@ -39,11 +39,14 @@ if (!process.env.PGDATABASE && !process.env.DATABASE_URL) {
 const config = {};
 
 if (ENV === 'production') {
+  console.log("Hitting the production if statement")
   config.connectionString = process.env.DATABASE_URL;
+  config.max = 2;
   config.ssl = {
     rejectUnauthorized: false
   };
 } else {
+  console.log("Hitting the else statement")
   config.database = process.env.PGDATABASE;
 }
 
